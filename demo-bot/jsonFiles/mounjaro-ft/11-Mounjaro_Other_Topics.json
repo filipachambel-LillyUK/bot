@@ -1,0 +1,233 @@
+{
+    "_id" : "dd9f0b40-f89d-4bd3-9cdf-56de661ce583",
+	"flowName" : "11-Mounjaro_Other_Topics",
+	"conversationType" : "Medical",
+	"intentName" : "intent_Other_topics",
+	"score" : 0.4,
+	"entities" : "",
+    "nodes" : [
+        {
+            "nodeId": "8c74e575-5ae3-4af9-8d62-36cd75e84433",
+            "parentIds": [
+                "ROOT"
+            ],
+            "condition": "",
+            "responses": [
+                {
+                    "type": "text",
+                    "text": "Here are some other topics we can review together."
+                },
+                {
+                    "type" : "suggestedActions",
+					"text" : "Please select the category that best matches your question.",
+					"suggestedActions": [
+                        {
+                            "type": "imBack",
+                            "title": "What is Mounjaro and how does it work.",
+                            "value": "What is Mounjaro and how does it work."
+                        },
+                        {
+                            "type": "imBack",
+                            "title": "How to use Mounjaro.",
+                            "value": "How to use Mounjaro."
+                        },
+                        {
+                            "type": "imBack",
+                            "title": "Where to get Mounjaro.",
+                            "value": "Where to get Mounjaro."
+                        },
+                        {
+                            "type": "messageBack",
+                            "title" : "Support Resources.",
+							"text" : "Support Resources.",
+							"displayText" : "Support Resources.",
+							"value" : {
+								"text" : "Support Resources.",
+								"payload" : {
+									"action" : "triggerFlow",
+									"value" : "12-Mounjaro_Support_Resources"
+								}
+							}
+                        },
+                        {
+                            "type": "messageBack",
+                            "title" : "Savings.",
+							"text" : "Savings.",
+							"displayText" : "Savings.",
+							"value" : {
+								"text" : "Savings.",
+								"payload" : {
+									"action" : "triggerFlow",
+									"value" : ""
+								}
+							}
+                        },
+                        {
+                            "type": "messageBack",
+                            "title" : "Done for today",
+							"text" : "Done for today",
+							"displayText" : "Done for today",
+							"value" : {
+								"text" : "Done for today",
+								"payload" : {
+									"action" : "triggerFlow",
+									"value" : "13-Mounjaro_Offboarding"
+								}
+							}
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "nodeId": "06e285fa-a841-4759-b7b2-2d0d70b78e65",
+            "parentIds": [
+                "8c74e575-5ae3-4af9-8d62-36cd75e84433"
+            ],
+            "condition": "What is Mounjaro and how does it work.",
+            "responses": [
+                {
+                    "type" : "suggestedActions",
+					"text" : "Please select from the following topics",
+					"suggestedActions" : [
+                        {
+                            "type": "messageBack",
+                            "title" : "What is Mounjaro.",
+							"text" : "What is Mounjaro.",
+							"displayText" : "What is Mounjaro.",
+							"value" : {
+								"text" : "What is Mounjaro.",
+								"payload" : {
+									"action" : "triggerFlow",
+									"value" : "02-What_Is_Mounjaro"
+								}
+							}
+                        },
+                        {
+                            "type": "messageBack",
+                            "title" : "How Mounjaro works.",
+							"text" : "How Mounjaro works.",
+							"displayText" : "How Mounjaro works.",
+							"value" : {
+								"text" : "How Mounjaro works.",
+								"payload" : {
+									"action" : "triggerFlow",
+									"value" : "05-How_Mounjaro_Works"
+								}
+							}
+                        },
+                        {
+                            "type": "messageBack",
+                            "title" : "Done for today",
+							"text" : "Done for today",
+							"displayText" : "Done for today",
+							"value" : {
+								"text" : "Done for today",
+								"payload" : {
+									"action" : "triggerFlow",
+									"value" : "13-Mounjaro_Offboarding"
+								}
+							}
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "nodeId": "94221989-278e-4181-8bb4-d187c477737c",
+            "parentIds": [
+                "8c74e575-5ae3-4af9-8d62-36cd75e84433"
+            ],
+            "condition": "How to use Mounjaro.",
+            "responses": [
+                {
+                    "type" : "suggestedActions",
+					"text" : "Please select from the following topics",
+					"suggestedActions" : [
+                        {
+                            "type": "messageBack",
+                            "title" : "Instructions for taking Mounjaro.",
+							"text" : "Instructions for taking Mounjaro.",
+							"displayText" : "Instructions for taking Mounjaro.",
+							"value" : {
+								"text" : "Instructions for taking Mounjaro.",
+								"payload" : {
+									"action" : "triggerFlow",
+									"value" : ""
+								}
+							}
+                        },
+                        {
+                            "type": "messageBack",
+                            "title" : "Done for today",
+							"text" : "Done for today",
+							"displayText" : "Done for today",
+							"value" : {
+								"text" : "Done for today",
+								"payload" : {
+									"action" : "triggerFlow",
+									"value" : "13-Mounjaro_Offboarding"
+								}
+							}
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "nodeId": "",
+            "parentIds": [
+                "8c74e575-5ae3-4af9-8d62-36cd75e84433"
+            ],
+            "condition": "",
+            "responses": [
+                {
+                    "type" : "suggestedActions",
+					"text" : "Please select from the following topics",
+					"suggestedActions" : [
+                        {
+                            "type": "messageBack",
+                            "title" : "Talking with my doctor.",
+							"text" : "Talking with my doctor.",
+							"displayText" : "Talking with my doctor.",
+							"value" : {
+								"text" : "Talking with my doctor.",
+								"payload" : {
+									"action" : "triggerFlow",
+									"value" : "03-Talking_With_My_Doctor"
+								}
+							}
+                        },
+                        {
+                            "type": "messageBack",
+                            "title" : "Is Mounjaro available.",
+							"text" : "Is Mounjaro available.",
+							"displayText" : "Is Mounjaro available.",
+							"value" : {
+								"text" : "Is Mounjaro available.",
+								"payload" : {
+									"action" : "triggerFlow",
+									"value" : ""
+								}
+							}
+                        },
+                        {
+                            "type": "messageBack",
+                            "title" : "Done for today",
+							"text" : "Done for today",
+							"displayText" : "Done for today",
+							"value" : {
+								"text" : "Done for today",
+								"payload" : {
+									"action" : "triggerFlow",
+									"value" : "13-Mounjaro_Offboarding"
+								}
+							}
+                        }
+                    ]
+                }
+            ]
+        }
+
+    ]
+}

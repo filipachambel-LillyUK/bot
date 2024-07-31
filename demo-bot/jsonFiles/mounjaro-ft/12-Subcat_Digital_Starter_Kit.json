@@ -1,0 +1,20 @@
+{
+    "_id": "c108a6e1-00cd-44a6-8c18-e55e4fd215c2",
+    "flowName": "12-Subcat_Digital_Starter_Kit",
+    "conversationType": "Medical",
+    "intentName": "",
+    "score": 0.4,
+    "entities": "",
+    "nodes": [
+        {
+        "nodeId": "cc613d99-9460-4cfc-b6d7-effcd30bfae6",
+        "parentIds": ["ROOT"],
+        "condition": "",
+        "responses": [
+            {
+                "type": ""
+            }
+        ]
+        }
+    ]
+}

@@ -1,0 +1,635 @@
+{
+    "_id": "97157dd2-ad05-4a57-948e-a999fefb6a60",
+    "flowName": "06_Trulicity_Savings_Pricing_Information",
+    "conversationType": "Medical",
+    "nodes": [
+        {
+            "nodeId": "4b4c4911-040f-4b7e-afee-13f1c966a179",
+            "parentIds": [
+                "ROOT"
+            ],
+            "condition": "",
+            "responses" : [
+                {
+                    "type": "suggestedActions",
+                    "text": "",
+                    "suggestedActions": [
+                         {
+                            "type": "imBack",
+                            "title": "Questions about Savings & Resources",
+                            "value": "Questions about Savings & Resources"
+                         },
+                         {
+                            "type": "imBack",
+                            "title": "Questions about Pricing Information",
+                            "value": "Questions about Pricing Information"
+                         }
+                    ]
+                }
+            ]
+        },
+        {
+            "nodeId": "82c89eaa-6988-45cc-b682-2fcecc9fe641",
+            "parentIds" : [
+                "849aa238-fbd3-4f9d-8ee1-4ee894ca1214",
+                "ed69e2bc-69ca-4bfd-aef7-4164a9f6bafe"
+            ],
+            "condition": "How do I know if I am eligible for a Trulicity savings card?",
+            "responses": [
+                {
+                    "type": "text",
+                    "text": "You are eligible for the Trulicity savings card if you meet all of the below requirements."
+                },
+                {
+                    "type": "text",
+                    "text": "By using the Trulicity Savings Card Program (? Card? ), you attest that you meet the eligibility criteria, and you agree to comply with the terms and conditions described below: \n**Card Eligibility:** \n1. You have been prescribed Trulicity consistent with FDA approved product labeling \n2. You are enrolled in a commercial drug insurance plan \n**3. You are not enrolled in any state, federal, or government funded healthcare program, including, without limitation, Medicaid, Medicare, Medicare Part D, Medicare Advantage, Medigap, DoD, VA, TRICARE /CHAMPUS, or any state prescription drug assistance program.** \n4. You are a resident of the United States or Puerto Rico \n5. You are 18 years of age or older"
+                },
+                {
+                    "type": "text",
+                    "text": "**Card Terms and Conditions** \nFor patients with commercial drug insurance coverage for Trulicity: \nYou must have commercial drug insurance that covers Trulicity and a prescription consistent with FDA-approved product labeling to pay as little as $25 for a 1-month, 2-month, or 3-month prescription fill of Trulicity. Month is defined as 28-days and up to 4 pens. Card savings are subject to a maximum monthly savings of up to $150 per 1-month prescription, $300 per 2-month prescription, or $450 per 3-month prescription fill and separate maximum annual savings of up to $1800 per calendar year. Subject to Lilly USA, LLC? s (? Lilly? ) right to terminate, rescind, revoke, or amend Card eligibility criteria and/or Card terms and conditions which may occur at Lilly's sole discretion, without notice, and for any reason, Card expires and savings end on 12/31/2024."
+                },
+                {
+                    "type": "text",
+                    "text": "**Additional Program Terms and Conditions** \nIf you have an insurance plan that is participating in an alternate funding program (? AFP? ) (examples include, but are not limited to, ImpaxRX, Payer Matrix, SHARx, Script Sourcing, and Paydhealth) that requires you to apply to the Trulicity Savings Card Program or otherwise pursue specialty drug prescription coverage through an alternate funding vendor as a condition of, requirement for, or prerequisite to coverage of Trulicity, you are not eligible for and are prohibited from using the Trulicity Savings Card Program. AFPs include programs where coverage, reimbursement, or patient out of pocket costs for a product in some way vary based on the availability of a manufacturer co-pay program. AFPs may modify, delay, deny, restrict, or withhold insurance benefits or coverage from patients, or exclude Lilly products from coverage contingent upon a member's use of Trulicity Savings Card Program. You agree to inform Trulicity Savings Card Program if you are or become a member of such an alternative funding program. You are responsible for any applicable taxes, fees, and any amount that exceeds the monthly or annual maximum Card savings. Monthly and annual maximum savings are set at Lilly's sole and absolute discretion and may be changed with or without notice at any time for any reason. At its sole discretion and with or without notice, Lilly may reduce, eliminate, or otherwise modify the Card savings for any reason, including but not limited to if your commercial drug insurance plan imposes additional requirements which limits or prevents you from receiving coverage for Trulicity, only allows partial coverage for Trulicity, removes coverage for Trulicity and requires you to utilize the Card, does not provide a material level of financial assistance for the cost of Trulicity, or does not apply Card payments to satisfy your co-payment, deductible, or coinsurance for Trulicity. Card savings are not valid for: Massachusetts residents if an AB-rated generic equivalent is available; California residents if an FDA-approved therapeutic equivalent is available. You must meet the Card eligibility criteria, terms and conditions every time you use the Card. Card activation is required. No party may seek reimbursement from your health insurance, any third party, or any health savings, flexible spending, or other healthcare reimbursement accounts, for any amount of the savings received through the Card. By utilizing the Card, you agree that if you are required to do so under the terms of your insurance coverage for this prescription or are otherwise required to do so by law, you will notify your Insurance Carrier of your redemption of the Card. Card savings cannot be combined or utilized with any other program, discount, discount card, cash discount card, coupon, incentive, or similar offer involving Trulicity. You agree that this Card savings is intended solely for the benefit of you, the patient, and that the Card benefits are nontransferable. It is prohibited for any person to sell, purchase, or trade; or to offer to sell, purchase, or trade, or to counterfeit the Card. The Card is not insurance. Lilly has the sole right to interpret and apply Card eligibility criteria, and terms and conditions. Card eligibility, and terms and conditions may be terminated, rescinded, revoked, or amended by Lilly at any time without notice and for any reason. Eligibility criteria, and terms and conditions for the Trulicity Savings Card Program may change from time to time; the most current version can be found at https://www.Trulicity.com. You may be required to obtain a new Card, including if any Card terms and conditions have been terminated, rescinded, revoked, or amended by Lilly. Card void where prohibited by law. Subject to Lilly's right to terminate, rescind, revoke or amend Card eligibility criteria and/or Card terms and conditions which may occur at Lilly? s sole discretion, without notice, and for any reason, the Card expires and savings end on 12/31/2024."
+                },
+                {
+                    "type": "event",
+                    "name": "enableFeedbackPrompt",
+                    "value": {
+                        "ResponseTagId": "06_Trulicity_Savings_Pricing_Information-Cards_Terms_And_Conditions"
+                    }
+                },
+                {
+                    "type": "suggestedActions",
+                    "text": "",
+                    "suggestedActions": [
+                        {
+                            "type": "imBack",
+                            "title": "I have insurance through an employer or private individual policy",
+                            "value": "I have insurance through an employer or private individual policy"
+                        },
+                        {
+                            "type": "imBack",
+                            "title": "I have another type of insurance (Medicaid, Medicare, Verterans Affair, TRICARE/CHAMPUS, Government employee), or I do not have insurance.",
+                            "value": "I have another type of insurance (Medicaid, Medicare, Verterans Affair, TRICARE/CHAMPUS, Government employee), or I do not have insurance."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "nodeId": "d23f72f8-ed92-4cf6-a4eb-1edefcb97296",
+            "parentIds": [
+                 "82c89eaa-6988-45cc-b682-2fcecc9fe641"
+            ],
+            "condition": "I have insurance through an employer or private individual policy",
+            "responses": [
+                {
+                    "type": "text",
+                    "text" : "Great! Have you checked with your insurance provider that they cover Trulicity?"
+                },
+                {
+                    "type": "suggestedActions",
+                    "text": "",
+                    "suggestedActions": [
+                        {
+                            "type": "imBack",
+                            "title": "Yes, I have checked through my insurance provider that they do cover Trulicity.",
+                            "value": "Yes, I have checked through my insurance provider that they do cover Trulicity."
+                        },
+                        {
+                            "type": "imBack",
+                            "title": "No, I have not checked through my insurance provider that they do cover Trulicity.",
+                            "value": "No, I have not checked through my insurance provider that they do cover Trulicity."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "nodeId": "2b1e267a-8343-4097-b63e-bff7bf778fe7",
+            "parentIds": [
+                 "d23f72f8-ed92-4cf6-a4eb-1edefcb97296"
+            ],
+            "condition": "Yes, I have checked through my insurance provider that they do cover Trulicity.",
+            "responses": [
+                {
+                    "type": "text",
+                    "text" : "Do you have a prescription for Trulicity from your doctor?"
+                },
+                {
+                    "type": "suggestedActions",
+                    "text": "",
+                    "suggestedActions": [
+                        {
+                            "type": "imBack",
+                            "title": "I do not have a prescription and need support talking with my doctor.",
+                            "value": "I do not have a prescription and need support talking with my doctor."
+                        },
+                        {
+                            "type": "imBack",
+                            "title": "I have a prescription for Trulicity from my doctor.",
+                            "value": "I have a prescription for Trulicity from my doctor."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "nodeId": "e80adbf2-1869-4444-915a-6e6958e40292",
+            "parentIds": [
+                 "2b1e267a-8343-4097-b63e-bff7bf778fe7"
+            ],
+            "condition": "I do not have a prescription and need support talking with my doctor.",
+            "responses": [
+                {
+                    "type" : "messageBack",
+                    "title" : "How to talk with my doctor about Trulicity",
+                    "text" : "How to talk with my doctor about Trulicity",
+                    "displayText" : "How to talk with my doctor about Trulicity",
+                    "value" : {
+                        "text" : "How to talk with my doctor about Trulicity",
+                        "payload" : {
+                            "action" : "triggerFlow",
+                            "value" : "03_Trulicity_Talking_with_my_doctor"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "nodeId": "430bc3e9-105d-4bb7-b8c2-57317e421179",
+            "parentIds": [
+                 "2b1e267a-8343-4097-b63e-bff7bf778fe7"
+            ],
+            "condition": "I have a prescription for Trulicity from my doctor.",
+            "responses": [
+                {
+                    "type": "suggestedActions",
+                    "text": "",
+                    "suggestedActions": [
+                        {
+                            "type": "imBack",
+                            "title": "I'd like to sign up for a savings card.",
+                            "value": "I'd like to sign up for a savings card."
+                        },
+                        {
+                            "type": "imBack",
+                            "title": "I'd like to activate a card",
+                            "value": "I'd like to activate a card"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "nodeId": "94d2f43d-8b87-47ad-aa3a-f9063b7d308c",
+            "parentIds": [
+                 "430bc3e9-105d-4bb7-b8c2-57317e421179"
+            ],
+            "condition": "I'd like to sign up for a savings card.",
+            "responses": [
+                {
+					"type" : "cards",
+					"layout" : "list",
+					"text" : "",
+					"cards" : [
+						{
+							"type" : "AdaptiveCard",
+							"card" : "SAVINGS_CARD"
+						}
+					]
+				},
+                {
+                    "type": "event",
+                    "name": "enableFeedbackPrompt",
+                    "value": {
+                        "ResponseTagId": "06_Trulicity_Savings_Pricing_Information-Id_like_to_sign_up_for_a_savings_card"
+                    }
+                },
+                {
+                    "type": "jumpFlow",
+                    "collection": "consumer",
+                    "flowId": "97157dd2-ad05-4a57-948e-a999fefb6a60",
+                    "flowName": "06_Trulicity_Savings_Pricing_Information",
+                    "nodeId": "445d2e72-5e1a-49ac-aa49-22f266cc442d",
+                    "responsesStartIndex": "0"   
+                }
+            ]
+        },
+        {
+            "nodeId": "6fdb1aef-f0d6-4bfd-b2df-450716ca9f14",
+            "parentIds": [
+                 "430bc3e9-105d-4bb7-b8c2-57317e421179"
+            ],
+            "condition": "I'd like to activate a card",
+            "responses": [
+                {
+					"type" : "cards",
+					"layout" : "list",
+					"text" : "",
+					"cards" : [
+						{
+							"type" : "AdaptiveCard",
+							"card" : "ACTIVATE_CARD"
+						}
+					]
+				},
+                {
+                    "type": "event",
+                    "name": "enableFeedbackPrompt",
+                    "value": {
+                        "ResponseTagId": "06_Trulicity_Savings_Pricing_Information-Id_like_to_activate_a_card"
+                    }
+                },
+                {
+                    "type": "jumpFlow",
+                    "collection": "consumer",
+                    "flowId": "97157dd2-ad05-4a57-948e-a999fefb6a60",
+                    "flowName": "06_Trulicity_Savings_Pricing_Information",
+                    "nodeId": "445d2e72-5e1a-49ac-aa49-22f266cc442d",
+                    "responsesStartIndex": "0"   
+                }
+            ]
+        },
+        {
+            "nodeId": "445d2e72-5e1a-49ac-aa49-22f266cc442d",
+            "parentIds": [
+                 "6fdb1aef-f0d6-4bfd-b2df-450716ca9f14",
+                 "94d2f43d-8b87-47ad-aa3a-f9063b7d308c",
+                 "38e73edb-ed30-4791-b1ed-ffe12ddd16e9",
+                 "9bc79f3c-9e37-420f-a2a0-66b12e010de3",
+                 "dbacbecb-a6b6-4062-9ffc-bf2943ce9cab",
+                 "752dea49-752e-4b7b-96e7-8666c8ef37b7",
+                 "ed5ec33f-9980-446c-bb93-288da26146b6",
+                 "f1990eb1-63b2-47a3-9de3-ccb2892338b3"
+
+            ],
+            "condition": "",
+            "responses": [
+                {
+                    "type": "text",
+                    "text": "What else can I help you with today?"
+                },
+                {
+                    "type" : "suggestedActions",
+                    "text" : "",
+                    "suggestedActions" : [
+                        {
+                            "type": "messageBack",
+                            "title": "Support Resources",
+                            "text": "Support Resources",
+                            "displayText": "Support Resources",
+                            "value": {
+                                "text": "Support Resources",
+                                "payload": {
+                                    "action": "triggerFlow",
+                                    "value": "11_Trulicity_Support_Resources"
+                                }
+                            }
+                        },
+                        {
+                            "type": "messageBack",
+                            "title": "Other topics",
+                            "text": "Other topics",
+                            "displayText": "Other topics",
+                            "value": {
+                                "text": "Other topics",
+                                "payload": {
+                                    "action": "triggerFlow",
+                                    "value": "12_Trulicity_Other_topics"
+                                }
+                            }
+                        },
+                        {
+                            "type": "messageBack",
+                            "title": "Done for today",
+                            "text": "Done for today",
+                            "displayText": "Done for today",
+                            "value": {
+                                "text": "Done for today",
+                                "payload": {
+                                    "action": "triggerFlow",
+                                    "value": "13_Trulicity_Offboarding"
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "nodeId": "38e73edb-ed30-4791-b1ed-ffe12ddd16e9",
+            "parentIds": [
+                 "d23f72f8-ed92-4cf6-a4eb-1edefcb97296"
+            ],
+            "condition": "No, I have not checked through my insurance provider that they do cover Trulicity.",
+            "responses": [
+                {
+                    "type": "text",
+                    "text" : "To confirm if your insurance provider covers Trulicity, contact the customer assistance number on your insurance card."
+                },
+                {
+                    "type": "event",
+                    "name": "enableFeedbackPrompt",
+                    "value": {
+                        "ResponseTagId": "06_Trulicity_Savings_Pricing_Information-No_I_have_not_checked_through_my_insurance_provider_that_they_do_cover_Trulicity"
+                    }
+                },
+                {
+                    "type": "jumpFlow",
+                    "collection": "consumer",
+                    "flowId": "97157dd2-ad05-4a57-948e-a999fefb6a60",
+                    "flowName": "06_Trulicity_Savings_Pricing_Information",
+                    "nodeId": "445d2e72-5e1a-49ac-aa49-22f266cc442d",
+                    "responsesStartIndex": "0"   
+                }
+            ]
+        },
+        {
+            "nodeId": "9bc79f3c-9e37-420f-a2a0-66b12e010de3",
+            "parentIds": [
+                 "82c89eaa-6988-45cc-b682-2fcecc9fe641"
+            ],
+            "condition": "I have another type of insurance (Medicaid, Medicare, Verterans Affair, TRICARE/CHAMPUS, Government employee), or I do not have insurance.",
+            "responses": [
+                {
+                    "type": "text",
+                    "text" : "Unfortunately, patients without insurance through an employer or a private individual policy are not able to use the Trulicity Savings Program."
+                },
+                {
+                    "type": "text",
+                    "text" : "The exclusion is based on United States Department of Health and Human Services (HHS) guidance to pharmaceutical manufacturers."
+                },
+                {
+                    "type": "event",
+                    "name": "enableFeedbackPrompt",
+                    "value": {
+                        "ResponseTagId": "06_Trulicity_Savings_Pricing_Information-I_have_another_type_of_insurance_or_I_do_not_have_insurance."
+                    }
+                },
+                {
+                    "type": "jumpFlow",
+                    "collection": "consumer",
+                    "flowId": "97157dd2-ad05-4a57-948e-a999fefb6a60",
+                    "flowName": "06_Trulicity_Savings_Pricing_Information",
+                    "nodeId": "445d2e72-5e1a-49ac-aa49-22f266cc442d",
+                    "responsesStartIndex": "0"   
+                }
+            ]
+        },
+        {
+            "nodeId": "849aa238-fbd3-4f9d-8ee1-4ee894ca1214",
+            "condition": "Questions about Savings & Resources",
+            "parentIds": [
+                "4b4c4911-040f-4b7e-afee-13f1c966a179"
+            ],
+            "responses": [
+               { 
+                "suggestedActions" : [
+                    {
+                        "type": "imBack",
+                        "title": "How do I know if I am eligible for a Trulicity savings card?",
+                        "value": "How do I know if I am eligible for a Trulicity savings card?"
+                     },
+                    {
+                        "type": "imBack",
+                        "title": "How may a savings card help with Trulicity?",
+                        "value": "How may a savings card help with Trulicity?"
+                     }
+                    ]
+                }
+            ]
+        },
+        {
+            "nodeId": "ed69e2bc-69ca-4bfd-aef7-4164a9f6bafe",
+            "condition": "How may a savings card help with Trulicity?",
+            "parentIds": [
+                "849aa238-fbd3-4f9d-8ee1-4ee894ca1214"
+            ],
+            "responses": [
+                {
+                    "type": "text",
+                    "text" : "If you are eligible and commercially insured, experience Trulicity for as little as $25 for up to 12 pens."
+                },
+                {
+                    "type": "jumpFlow",
+                    "collection": "consumer",
+                    "flowId": "97157dd2-ad05-4a57-948e-a999fefb6a60",
+                    "flowName": "06_Trulicity_Savings_Pricing_Information",
+                    "nodeId": "82c89eaa-6988-45cc-b682-2fcecc9fe641",
+                    "responsesStartIndex": "1"   
+                }
+                
+            ]
+        },
+        {
+            "nodeId": "bbc26f84-d050-43b7-8884-be0e1a10c644",
+            "condition": "Questions about Pricing Information",
+            "parentIds": [
+                "4b4c4911-040f-4b7e-afee-13f1c966a179"
+            ],
+            "responses": [
+                {
+                    "type": "text",
+                    "text": "To best help you understand the price you may pay for Trulicity. Select the option that best describes your insurance situation."
+                },
+                {
+                    "type": "suggestedActions",
+                    "text": "",
+                    "suggestedActions": [
+                         {
+                            "type": "imBack",
+                            "title": "I have insurance through an employer or private individual policy",
+                            "value": "I have insurance through an employer or private individual policy"
+                         },
+                         {
+                            "type": "imBack",
+                            "title": "I have another type of insurance (Medicaid, Medicare, Verterans Affair, TRICARE/CHAMPUS, Government employee), or I do not have insurance.",
+                            "value": "I have another type of insurance (Medicaid, Medicare, Verterans Affair, TRICARE/CHAMPUS, Government employee), or I do not have insurance."
+                         }
+                    ]
+                }
+                
+            ]
+        },
+        {
+            "nodeId": "dbacbecb-a6b6-4062-9ffc-bf2943ce9cab",
+            "condition": "I have insurance through an employer or private individual policy",
+            "parentIds": [
+                "bbc26f84-d050-43b7-8884-be0e1a10c644"
+            ],
+            "responses": [
+                {
+                    "type": "text",
+                    "text": "About 92% of Trulicity prescriptions cost between $0 and $30 per month, and the remaining cost an average of $239 per month.²\n\n²Based on information licensed from IQVIA: IQVIA , Real-World Evidence Claims Data for the period April 2019 - March 2020 reflecting estimates of real-world activity. All rights reserved. Accessed on April 30, 2020."
+                },
+                {
+                    "type": "text",
+                    "text": "What you pay for Trulicity will depend on your insurance plan. Each plan has different preferred drug lists and out-of-pocket amounts, and most include an annual deductible. If you haven't met your deductible, you'll see higher prices until the deductible is met, then your out-of-pocket cost will likely drop."
+                },
+                {
+                    "type": "text",
+                    "text": "With the Trulicity Savings Card, a one-month supply of Trulicity can cost as little as $25, subject to certain terms and maximums. Click here to learn more about the Trulicity Savings Card."
+                },
+                {
+                    "type": "event",
+                    "name": "enableFeedbackPrompt",
+                    "value": {
+                        "ResponseTagId": "06_Trulicity_Savings_Pricing_Information-I_have_insurance_through_an_employer_or_private_individual_policy"
+                    }
+                },
+                {
+                    "type": "jumpFlow",
+                    "collection": "consumer",
+                    "flowId": "97157dd2-ad05-4a57-948e-a999fefb6a60",
+                    "flowName": "06_Trulicity_Savings_Pricing_Information",
+                    "nodeId": "445d2e72-5e1a-49ac-aa49-22f266cc442d",
+                    "responsesStartIndex": "0"   
+                }
+            ]
+        },
+        {
+            "nodeId": "e702ebdc-a876-4d2a-bb2c-d9fc0c37baa7",
+            "condition": "I have another type of insurance (Medicaid, Medicare, Verterans Affair, TRICARE/CHAMPUS, Government employee), or I do not have insurance.",
+            "parentIds": [
+                "bbc26f84-d050-43b7-8884-be0e1a10c644"
+            ],
+            "responses": [
+                {
+                    "type": "text",
+                    "text": "Prescription drug prices can be confusing. Two people may pay different prices for the same drug, depending on their insurance situation.\n\nThe list price¹ of Trulicity is $977.42 per month, but the amount you pay will largely depend on your insurance plan.\n\nThe information below will give you a good idea of what to expect based on your insurance situation and support that may be available to you.\n\nFor the most accurate information, talk to your insurance provider who knows the details of your plan.\n\n¹List price, also referred to as wholesale acquisition cost or WAC, is the price at which Lilly sells its products to wholesalers and may not represent actual transactional prices patients pay at the pharmacy. WAC from AnalySource accessed on January 1, 2024. Reprinted with permission by First Databank, Inc. All rights reserved. 2024. https://www.fdbhealth.com/policies/drug-pricing-policy. A monthly supply of Trulicity is defined as four pens per month."
+                },
+                {
+                    "type": "suggestedActions",
+                    "text": "",
+                    "suggestedActions": [
+                         {
+                            "type": "imBack",
+                            "title": "I have Medicare Part D Coverage",
+                            "value": "I have Medicare Part D Coverage"
+                         },
+                         {
+                            "type": "imBack",
+                            "title": "I have Medicaid Coverage",
+                            "value": "I have Medicaid Coverage"
+                         },
+                         {
+                            "type": "imBack",
+                            "title": "I don't have insurance or Trulicity is not covered by my insurance plan",
+                            "value": "I don't have insurance or Trulicity is not covered by my insurance plan"
+                         }
+                    ]
+                }
+            ]
+        },
+        {
+            "nodeId": "752dea49-752e-4b7b-96e7-8666c8ef37b7",
+            "condition": "I have Medicare Part D Coverage",
+            "parentIds": [
+                "e702ebdc-a876-4d2a-bb2c-d9fc0c37baa7"
+            ],
+            "responses": [
+                {
+                    "type": "text",
+                    "text": "For most patients with Medicare Part D coverage, out-of-pocket costs can vary throughout the year depending on which phase of the Part D benefit you are currently in. Overall, about 70% of Trulicity prescriptions cost between $0 and $100 per month, and the remaining prescriptions cost an average of $207 per month.²\n\n² Based on information licensed from IQVIA: IQVIA , Real-World Evidence Claims Data for the period April 2019 - March 2020 reflecting estimates of real-world activity. All rights reserved. Accessed on April 30, 2020."
+                },
+                {
+                    "type": "text",
+                    "text": "Some Medicare patients qualify for extra financial support through the Extra Help3 program. If you are eligible for Extra Help, you can expect to pay $4 to $9 for each prescription.⁴\n\n⁴Centers for Medicare & Medicaid Services (CMS). Announcement of Calendar Year (CY) 2021 Medicare Advantage (MA) Capitation Rates and Part C and Part D Payment Policies. https://www.cms.gov/files/document/2021-announcement.pdf. Accessed on May 29, 2020."
+                },
+                {
+                    "type": "text",
+                    "text": "If you are unsure whether you qualify for Extra Help and would like more information, please visit: https://www.ssa.gov/benefits/medicare/prescriptionhelp/ ."
+                },
+                {
+                    "type": "event",
+                    "name": "enableFeedbackPrompt",
+                    "value": {
+                        "ResponseTagId": "06-Trulicity_Savings_Pricing_Information-I_have_Medicare_Part_D_Coverage"
+                    }
+                },
+                {
+                    "type": "jumpFlow",
+                    "collection": "consumer",
+                    "flowId": "97157dd2-ad05-4a57-948e-a999fefb6a60",
+                    "flowName": "06_Trulicity_Savings_Pricing_Information",
+                    "nodeId": "445d2e72-5e1a-49ac-aa49-22f266cc442d",
+                    "responsesStartIndex": "0"   
+                }
+                
+            ]
+        },
+        {
+            "nodeId": "ed5ec33f-9980-446c-bb93-288da26146b6",
+            "condition": "I have Medicaid Coverage",
+            "parentIds": [
+                "e702ebdc-a876-4d2a-bb2c-d9fc0c37baa7"
+            ],
+            "responses": [
+                {
+                    "type": "text",
+                    "text": "For most people on Medicaid, prescription drugs like Trulicity range from $4 to $9 per month.⁵ Some states allow even lower copays, or eliminate the copay requirement altogether.\n\n⁵ Centers for Medicare & Medicaid Services (CMS). Cost Sharing Out of Pocket Costs. Maximum Allowable Copayments for Eligible Populations by Family Income. **All out-of-pocket charges are based on the specific state's defined payment amount for that service. Certain groups, including children, terminally ill individuals, and individuals residing in an institution are exempt from cost sharing. Refer to your state agency for details about Medicaid out-of-pocket costs. https://www.medicaid.gov/medicaid/cost-sharing/cost-sharing-out-pocket-costs/index.html. Accessed on January 16, 2020."
+                },
+                {
+                    "type": "text",
+                    "text": "To find out if you qualify for Medicaid, or for more information about copayments in your state, please visit: https://www.medicaid.gov/state-overviews/index.html."
+                },
+                {
+                    "type": "event",
+                    "name": "enableFeedbackPrompt",
+                    "value": {
+                        "ResponseTagId": "06-Trulicity_Savings_Pricing_Information-I_have_Medicaid_Coverage"
+                    }
+                },
+                {
+                    "type": "jumpFlow",
+                    "collection": "consumer",
+                    "flowId": "97157dd2-ad05-4a57-948e-a999fefb6a60",
+                    "flowName": "06_Trulicity_Savings_Pricing_Information",
+                    "nodeId": "445d2e72-5e1a-49ac-aa49-22f266cc442d",
+                    "responsesStartIndex": "0"   
+                }
+                
+            ]
+        },
+        {
+            "nodeId": "f1990eb1-63b2-47a3-9de3-ccb2892338b3",
+            "condition": "I don't have insurance or Trulicity is not covered by my insurance plan",
+            "parentIds": [
+                "e702ebdc-a876-4d2a-bb2c-d9fc0c37baa7"
+            ],
+            "responses": [
+                {
+                    "type": "text",
+                    "text": "If you do not have prescription medication insurance coverage, or if your insurance does not cover Trulicity, you can expect to pay close to the list price shown above, plus any additional pharmacy charges depending on where you purchase your medicine."
+                },
+                {
+                    "type": "text",
+                    "text": "If you are interested in obtaining insurance, there are resources available to help you:\n- To find out if you qualify for Medicaid and for information about copayments in your state, please visit:\nhttps://www.medicaid.gov/state-overviews/index.html.\n- To learn more about private individual policies via the Insurance Marketplace, please visit:\nhttps://mat.org/Health-Insurance-Resources.\n\nSee below for information regarding additional support services that may be available to you."
+                },
+                {
+                    "type": "text",
+                    "text": "You may be eligible for savings at pharmacies nationwide through the Inside Rx select provider program. Inside Rx offers savings of up to 25% on Trulicity when you use your discount card and pay at the pharmacy. You can find full program details and obtain your card at https://insiderx.com/trulicity-pen/pricing."
+                },
+                {
+                    "type": "event",
+                    "name": "enableFeedbackPrompt",
+                    "value": {
+                        "ResponseTagId": "06-Trulicity_Savings_Pricing_Information-I_dont_have_insurance_or_Trulicity_is_not_covered_by_my_insurance_plan"
+                    }
+                },
+                {
+                    "type": "jumpFlow",
+                    "collection": "consumer",
+                    "flowId": "97157dd2-ad05-4a57-948e-a999fefb6a60",
+                    "flowName": "06_Trulicity_Savings_Pricing_Information",
+                    "nodeId": "445d2e72-5e1a-49ac-aa49-22f266cc442d",
+                    "responsesStartIndex": "0"   
+                }
+                
+            ]
+        }
+    ]
+}
+
