@@ -1,0 +1,26 @@
+{
+	"_id" : "SIGN_UP_FOR_UPDATES",
+	"flowName" : "SIGN_UP_FOR_UPDATES",
+	"type" : "AdaptiveCard",
+	"schema" : "http://adaptivecards.io/schemas/adaptive-card.json",
+	"version" : "1.3",
+	"body" : [
+		{
+			"type" : "TextBlock",
+			"text" : "Get more information about Mounjaro, sent to your inbox.",
+			"wrap" : true,
+			"horizontalAlignment" : "Center",
+			"size" : "medium"
+		},
+		{
+			"type" : "ActionSet",
+			"actions" : [
+				{
+					"type" : "Action.OpenUrl",
+					"title" : "Sign up for updates",
+					"url" : ""
+				}
+			]
+		}
+	]
+}

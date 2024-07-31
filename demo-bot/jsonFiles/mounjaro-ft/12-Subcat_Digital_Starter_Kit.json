@@ -7,12 +7,84 @@
     "entities": "",
     "nodes": [
         {
-        "nodeId": "cc613d99-9460-4cfc-b6d7-effcd30bfae6",
+        "nodeId": "8976e6fc-dba9-44f9-9e1d-a1f2821f3849",
         "parentIds": ["ROOT"],
         "condition": "",
         "responses": [
             {
-                "type": ""
+                "type": "text",
+                "text": "Text \"MJ\" to 85099 to download your free kit to help you get started on Mounjaro."
+            },
+            {
+                "type" : "suggestedActions",
+                "text" : "What else can I help you with?",
+                "suggestedActions" : [
+                    {
+                        "type": "messageBack",
+                        "title" : "How Mounjaro works.",
+                        "text" : "How Mounjaro works.",
+                        "displayText" : "How Mounjaro works.",
+                        "value" : {
+                            "text" : "How Mounjaro works.",
+                            "payload" : {
+                                "action" : "triggerFlow",
+                                "value" : "05-How_Mounjaro_Works"
+                            }
+                        }
+                    },
+                    {
+                        "type": "messageBack",
+                        "title" : "How to use Mounjaro.",
+                        "text" : "How to use Mounjaro.",
+                        "displayText" : "How to use Mounjaro.",
+                        "value" : {
+                            "text" : "How to use Mounjaro.",
+                            "payload" : {
+                                "action" : "triggerFlow",
+                                "value" : "08-How_To_Use_Mounjaro"
+                            }
+                        }
+                    },
+                    {
+                        "type": "messageBack",
+                        "title" : "Savings.",
+                        "text" : "Savings.",
+                        "displayText" : "Savings.",
+                        "value" : {
+                            "text" : "Savings.",
+                            "payload" : {
+                                "action" : "triggerFlow",
+                                "value" : "06-Savings_Coverage_Full_Tree"
+                            }
+                        }
+                    },
+                    {
+                        "type": "messageBack",
+                        "title" : "Other topics.",
+                        "text" : "Other topics.",
+                        "displayText" : "Other topics.",
+                        "value" : {
+                            "text" : "Other topics.",
+                            "payload" : {
+                                "action" : "triggerFlow",
+                                "value" : "11-Mounjaro_Other_Topics"
+                            }
+                        }
+                    },
+                    {
+                        "type": "messageBack",
+                        "title" : "Done for today",
+                        "text" : "Done for today",
+                        "displayText" : "Done for today",
+                        "value" : {
+                            "text" : "Done for today",
+                            "payload" : {
+                                "action" : "triggerFlow",
+                                "value" : "13-Mounjaro_Offboarding"
+                            }
+                        }
+                    }
+                ]
             }
         ]
         }

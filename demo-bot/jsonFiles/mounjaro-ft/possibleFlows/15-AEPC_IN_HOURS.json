@@ -1,0 +1,25 @@
+{
+  "_id": "2cc3609b-bd49-4719-942d-64bb9a2f7c50",
+  "flowName": "15-AEPC_IN_HOURS",
+  "conversationType": "Medical",
+  "intentName": "",
+  "score": 0.4,
+  "entities": "",
+  "nodes": [
+    {
+      "nodeId": "1cac5298-3919-431e-ad2d-399c008f9a33",
+      "parentIds": ["ROOT"],
+      "condition": "",
+      "responses": [
+        {
+          "type": "text",
+          "text": "It sounds like you're experiencing a side effect or problem with your medicine. Tell your healthcare provider if you have any side effect that bothers you or that does not go away. Call your doctor for medical advice about side effects. You may report side effects to FDA at 1-800-FDA-1088.\n\nIf you are experiencing a medical emergency, dial 911 or go to your nearest medical emergency room facility.\n\nLet's see if there is an agent available to assist you."
+        },
+        {
+          "type": "executeModule",
+          "moduleName": "gccModuleDialog"
+        }
+      ]
+    }
+  ]
+}

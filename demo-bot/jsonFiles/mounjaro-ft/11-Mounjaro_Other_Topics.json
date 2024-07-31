@@ -45,7 +45,7 @@
 								"text" : "Support Resources.",
 								"payload" : {
 									"action" : "triggerFlow",
-									"value" : "12-Mounjaro_Support_Resources"
+									"value" : "12-Subcat_Support_Resources"
 								}
 							}
                         },
@@ -58,7 +58,7 @@
 								"text" : "Savings.",
 								"payload" : {
 									"action" : "triggerFlow",
-									"value" : ""
+									"value" : "06-Savings_Coverage_Full_Tree"
 								}
 							}
                         },
@@ -153,7 +153,7 @@
 								"text" : "Instructions for taking Mounjaro.",
 								"payload" : {
 									"action" : "triggerFlow",
-									"value" : ""
+									"value" : "08-How_To_Use_Mounjaro"
 								}
 							}
                         },
@@ -175,11 +175,11 @@
             ]
         },
         {
-            "nodeId": "",
+            "nodeId": "c754ebf7-7e51-4816-8498-3a1bdda34126",
             "parentIds": [
                 "8c74e575-5ae3-4af9-8d62-36cd75e84433"
             ],
-            "condition": "",
+            "condition": "Where to get Mounjaro.",
             "responses": [
                 {
                     "type" : "suggestedActions",
@@ -207,7 +207,7 @@
 								"text" : "Is Mounjaro available.",
 								"payload" : {
 									"action" : "triggerFlow",
-									"value" : ""
+									"value" : "07-Is_Mounjaro_Supply_Available"
 								}
 							}
                         },

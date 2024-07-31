@@ -1,0 +1,103 @@
+{
+  "_id": "cf851ce2-937c-4730-8e9c-ea4ca39162aa",
+  "flowName": "12-Subcat_Support_Resources",
+  "conversationType": "Medical",
+  "intentName": "intent_Mounjaro_Support_Resources",
+  "score": 0.4,
+  "entities": "",
+  "nodes": [
+    {
+      "nodeId": "fd516510-7df7-4038-b9c3-3816607acf8e",
+      "parentIds": ["ROOT"],
+      "condition": "",
+      "responses": [
+        {
+          "type": "cards",
+          "layout": "list",
+          "text": "",
+          "cards": [
+            {
+              "type": "AdaptiveCard",
+              "card": "SIGN_UP_FOR_UPDATES"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "We know that starting a new treatment can lead to concerns and questions. Although we can't take the place of your doctor, we're here to help you any way we can.\n\nCall us at 1-833-807-MJRO(833-807-6576)."
+        },
+        {
+          "type": "suggestedActions",
+          "text": "What else can I help you with?",
+          "suggestedActions": [
+            {
+              "type": "messageBack",
+              "title": "How Mounjaro works.",
+              "text": "How Mounjaro works.",
+              "displayText": "How Mounjaro works.",
+              "value": {
+                "text": "How Mounjaro works.",
+                "payload": {
+                  "action": "triggerFlow",
+                  "value": "05-How_Mounjaro_Works"
+                }
+              }
+            },
+            {
+              "type": "messageBack",
+              "title": "How to use Mounjaro.",
+              "text": "How to use Mounjaro.",
+              "displayText": "How to use Mounjaro.",
+              "value": {
+                "text": "How to use Mounjaro.",
+                "payload": {
+                  "action": "triggerFlow",
+                  "value": "08-How_To_Use_Mounjaro"
+                }
+              }
+            },
+            {
+              "type": "messageBack",
+              "title": "Savings.",
+              "text": "Savings.",
+              "displayText": "Savings.",
+              "value": {
+                "text": "Savings.",
+                "payload": {
+                  "action": "triggerFlow",
+                  "value": "06-Savings_Coverage_Full_Tree"
+                }
+              }
+            },
+            {
+              "type": "messageBack",
+              "title": "Other topics.",
+              "text": "Other topics.",
+              "displayText": "Other topics.",
+              "value": {
+                "text": "Other topics.",
+                "payload": {
+                  "action": "triggerFlow",
+                  "value": "11-Mounjaro_Other_Topics"
+                }
+              }
+            },
+            {
+              "type": "messageBack",
+              "title": "Done for today",
+              "text": "Done for today",
+              "displayText": "Done for today",
+              "value": {
+                "text": "Done for today",
+                "payload": {
+                  "action": "triggerFlow",
+                  "value": "13-Mounjaro_Offboarding"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

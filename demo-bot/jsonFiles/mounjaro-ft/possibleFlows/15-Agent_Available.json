@@ -1,0 +1,23 @@
+{
+    "_id": "f4a3a981-c4a3-4722-bd3d-57d93790c363",
+    "flowName": "15-Agent_Available",
+    "conversationType": "Medical",
+    "intentName": "",
+    "score": 0.4,
+    "entities": "",
+    "nodes": [
+      {
+        "nodeId": "a895e0b4-6c7e-404b-a897-fcf9d38105cd",
+        "parentIds": [
+            "ROOT"
+        ],
+        "condition": "",
+        "responses": [
+            {
+                "type" : "text",
+                "text" : "Thank you for your patience. An agent is available. You are now being transferred to a live agent."
+            }      
+        ]
+      }
+    ]
+  }
