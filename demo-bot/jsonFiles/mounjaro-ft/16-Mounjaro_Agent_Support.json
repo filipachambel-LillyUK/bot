@@ -1,0 +1,25 @@
+{
+  "_id": "5da40567-a6d0-4b2d-8ab7-31990e7c3a11",
+  "flowName": "16-Mounjaro_Agent_Support",
+  "conversationType": "Medical",
+  "intentName": "",
+  "score": 0.4,
+  "entities": "",
+  "nodes": [
+    {
+      "nodeId": "dcf50d34-4029-4cf1-8d9b-cb04b3bd4265",
+      "parentIds": ["ROOT"],
+      "condition": "",
+      "responses": [
+        {
+          "type": "text",
+          "text": "It sounds like you need to speak with an agent. Please contact Lilly Support Services at 1-800-LillyRx. Lilly Support Services is open 9 AM ET - 5 PM ET Monday through Friday."
+        },
+        {
+          "type": "text",
+          "text": "Is there anything else I can help you with?"
+        }
+      ]
+    }
+  ]
+}
