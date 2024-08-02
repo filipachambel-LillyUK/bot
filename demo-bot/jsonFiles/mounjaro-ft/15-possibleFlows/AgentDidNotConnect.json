@@ -1,0 +1,61 @@
+{
+    "_id": "8eefcd75-9f7d-424e-85fe-900964872712",
+    "flowName": "AgentDidNotConnect",
+    "conversationType": "Medical",
+    "intentName": "",
+    "score": 0.4,
+    "entities": "",
+    "nodes": [
+      {
+        "nodeId": "df9ae943-98f6-4b62-88e0-b7a42c158d56",
+        "parentIds": [
+          "ROOT"
+        ],
+        "condition": "",
+        "responses": [
+          {
+            "type" : "text",
+            "text" : "It appears that there are no agents currently available. Would like to attempt to connect to an agent again, or would you prefer to call an agent?"
+          },
+          {
+            "type" : "suggestedActions",
+            "text" : "",
+            "suggestedActions" : [
+              {
+                "type" : "messageBack",
+                "title" : "Connect to an agent",
+                "text" : "Connect to an agent",
+                "displayText" : "Connect to an agent",
+                "value" : {
+                  "text" : "Connect to an agent",
+                  "payload" : {
+                    "action" : "triggerFlow",
+                    "value" : "AEPC_IN_HOURS"
+                  }
+                }
+              },
+              {
+                "type" : "imBack",
+                "title" : "Call an agent",
+                "value" : "Call an agent"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nodeId": "aa04427d-7d06-4f45-a8fd-e4726d1cfe2e",
+        "parentIds": [
+          "df9ae943-98f6-4b62-88e0-b7a42c158d56"
+        ],
+        "condition": "Call an agent",
+        "responses": [
+          {
+            "type" : "text",
+            "text" : "Please contact Lilly Support Services at 1-800-LillyRx.\nLilly Support Services is open 9 AM ET - 5 PM ET Monday through Friday."
+          }
+        ]
+      }
+    ]
+  }
+  

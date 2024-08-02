@@ -8,7 +8,9 @@
     "nodes": [
         {
         "nodeId": "8976e6fc-dba9-44f9-9e1d-a1f2821f3849",
-        "parentIds": ["ROOT"],
+        "parentIds": [
+            "ROOT"
+        ],
         "condition": "",
         "responses": [
             {

@@ -2,7 +2,7 @@
     "_id" : "dd9f0b40-f89d-4bd3-9cdf-56de661ce583",
 	"flowName" : "11-Mounjaro_Other_Topics",
 	"conversationType" : "Medical",
-	"intentName" : "intent_Other_topics",
+	"intentName" : "",
 	"score" : 0.4,
 	"entities" : "",
     "nodes" : [

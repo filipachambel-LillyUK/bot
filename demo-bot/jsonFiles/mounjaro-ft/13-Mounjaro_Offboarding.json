@@ -1,25 +1,34 @@
 {
-    "_id": "aeb081a4-fdef-4e5f-b9c9-927dfb4305ec",
-    "flowName": "13-Mounjaro_Offboarding",
-    "conversationType": "Generic",
-    "intentName": "",
-    "score": 0.4,
-    "entities": "",
-    "nodes": [
+  "_id": "aeb081a4-fdef-4e5f-b9c9-927dfb4305ec",
+  "flowName": "13-Mounjaro_Offboarding",
+  "conversationType": "Generic",
+  "intentName": "",
+  "score": 0.4,
+  "entities": "",
+  "nodes": [
+    {
+      "nodeId": "080c9387-f41a-4161-83fd-bda3253ddea5",
+      "parentIds": [
+        "ROOT"
+    ],
+      "condition": "",
+      "responses": [
         {
-            "nodeId": "080c9387-f41a-4161-83fd-bda3253ddea5",
-            "parentIds": ["ROOT"],
-            "condition": "",
-            "responses": [
-                {
-                    "type": "text",
-                    "text" : "Thank you for chatting. I hope the information was helpful. Please rate your experience below. To start a new chat, simply refresh the page."
-                },
-                {
-                    "type": "event",
-                    "name": "showReviewPrompt"
-                }
-            ]
+          "type": "text",
+          "text": "Thank you for chatting. I hope the information was helpful. Please rate your experience below. To start a new chat, simply refresh the page."
+        },
+        {
+          "type": "event",
+          "name": "enableNormalSendBox",
+          "value": {
+            "state": false
+          }
+        },
+        {
+          "type": "event",
+          "name": "showReviewPrompt"
         }
-    ]
+      ]
+    }
+  ]
 }

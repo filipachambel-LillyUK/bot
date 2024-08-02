@@ -8,7 +8,9 @@
   "nodes": [
     {
       "nodeId": "3b973fde-65e4-4cc7-8aa4-4f93fd16a6a5",
-      "parentIds": ["ROOT"],
+      "parentIds": [
+        "ROOT"
+      ],
       "condition": "",
       "responses": [
         {
@@ -75,7 +77,9 @@
     },
     {
       "nodeId": "5c91547f-8ada-488a-a42f-912a943fc4a7",
-      "parentIds": ["3b973fde-65e4-4cc7-8aa4-4f93fd16a6a5"],
+      "parentIds": [
+        "3b973fde-65e4-4cc7-8aa4-4f93fd16a6a5"
+      ],
       "condition": "What is Mounjaro and how does it work.",
       "responses": [
         {
@@ -127,7 +131,9 @@
     },
     {
       "nodeId": "97d18781-a6bb-4607-b4b4-1b444bc811cd",
-      "parentIds": ["3b973fde-65e4-4cc7-8aa4-4f93fd16a6a5"],
+      "parentIds": [
+        "3b973fde-65e4-4cc7-8aa4-4f93fd16a6a5"
+      ],
       "condition": "How to use Mounjaro.",
       "responses": [
         {
@@ -165,8 +171,10 @@
       ]
     },
     {
-        "nodeId": "",
-        "parentIds": ["3b973fde-65e4-4cc7-8aa4-4f93fd16a6a5"],
+        "nodeId": "9eb0f478-4f82-41b9-a33b-94369a5a5aaa",
+        "parentIds": [
+          "3b973fde-65e4-4cc7-8aa4-4f93fd16a6a5"
+        ],
         "condition": "Where to get Mounjaro.",
         "responses": [
           {

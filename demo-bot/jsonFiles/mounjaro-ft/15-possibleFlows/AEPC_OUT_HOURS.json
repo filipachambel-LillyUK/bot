@@ -1,0 +1,27 @@
+{
+    "_id": "549819e0-0e48-4899-b779-42f5e4610547",
+    "flowName": "AEPC_OUT_HOURS",
+    "conversationType": "Medical",
+    "intentName": "",
+    "score": 0.4,
+    "entities": "",
+    "nodes": [
+      {
+        "nodeId": "1623773d-59d8-470e-82fe-d9ec1de33d65",
+        "parentIds": [
+            "ROOT"
+        ],
+        "condition": "",
+        "responses": [
+          {
+            "type": "text",
+            "text": "If you are experiencing a medical emergency, dial 911 or go to your nearest medical emergency room facility.\nIt sounds like you're experiencing a side effect or problem with your medicine. Tell your healthcare provider if you have any side effect that bothers you or that does not go away. Call your doctor for medical advice about side effects. You may report side effects to FDA at 1-800-FDA-1088.\n\nTo report a side effect or a problem with your medicine, please contact Lilly Support Services at 1-800-LillyRx.\nLilly Support Services is open 9 AM ET - 5 PM ET Monday through Friday."
+          },
+          {
+            "type": "text",
+            "text": "Is there anything else I can help you with?"
+          }       
+        ]
+      }
+    ]
+  }
