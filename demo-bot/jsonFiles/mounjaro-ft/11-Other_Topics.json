@@ -1,6 +1,6 @@
 {
     "_id" : "dd9f0b40-f89d-4bd3-9cdf-56de661ce583",
-	"flowName" : "11-Mounjaro_Other_Topics",
+	"flowName" : "11-Other_Topics",
 	"conversationType" : "Medical",
 	"intentName" : "",
 	"score" : 0.4,
@@ -38,11 +38,11 @@
                         },
                         {
                             "type": "messageBack",
-                            "title" : "Support Resources.",
-							"text" : "Support Resources.",
-							"displayText" : "Support Resources.",
+                            "title" : "Support resources and/or assistance.",
+							"text" : "Support resources and/or assistance.",
+							"displayText" : "Support resources and/or assistance.",
 							"value" : {
-								"text" : "Support Resources.",
+								"text" : "Support resources and/or assistance.",
 								"payload" : {
 									"action" : "triggerFlow",
 									"value" : "12-Subcat_Support_Resources"
@@ -71,7 +71,7 @@
 								"text" : "Done for today",
 								"payload" : {
 									"action" : "triggerFlow",
-									"value" : "13-Mounjaro_Offboarding"
+									"value" : "13-Offboarding"
 								}
 							}
                         }
@@ -125,7 +125,7 @@
 								"text" : "Done for today",
 								"payload" : {
 									"action" : "triggerFlow",
-									"value" : "13-Mounjaro_Offboarding"
+									"value" : "13-Offboarding"
 								}
 							}
                         }
@@ -166,7 +166,7 @@
 								"text" : "Done for today",
 								"payload" : {
 									"action" : "triggerFlow",
-									"value" : "13-Mounjaro_Offboarding"
+									"value" : "13-Offboarding"
 								}
 							}
                         }
@@ -220,7 +220,7 @@
 								"text" : "Done for today",
 								"payload" : {
 									"action" : "triggerFlow",
-									"value" : "13-Mounjaro_Offboarding"
+									"value" : "13-Offboarding"
 								}
 							}
                         }

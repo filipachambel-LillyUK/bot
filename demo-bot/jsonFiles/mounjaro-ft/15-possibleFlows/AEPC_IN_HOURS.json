@@ -1,6 +1,6 @@
 {
   "_id": "2cc3609b-bd49-4719-942d-64bb9a2f7c50",
-  "flowName": "AEPC_IN_HOURS",
+  "flowName": "15-AEPC_IN_HOURS",
   "conversationType": "Medical",
   "intentName": "",
   "score": 0.4,
@@ -15,11 +15,53 @@
       "responses": [
         {
           "type": "text",
-          "text": "It sounds like you're experiencing a side effect or problem with your medicine. Tell your healthcare provider if you have any side effect that bothers you or that does not go away. Call your doctor for medical advice about side effects. You may report side effects to FDA at 1-800-FDA-1088.\n\nIf you are experiencing a medical emergency, dial 911 or go to your nearest medical emergency room facility.\n\nLet's see if there is an agent available to assist you."
+          "text": "It sounds like you're experiencing a side effect or problem with your medicine. Tell your healthcare provider if you have any side effect that bothers you or that does not go away. Call your doctor for medical advice about side effects. You may report side effects to FDA at 1-800-FDA-1088.\n\nIf you are experiencing a medical emergency, dial 911 or go to your nearest medical emergency room facility."
+        },
+        {
+          "type": "suggestedActions",
+          "text": "Would you like to be connected with an agent for assistance?",
+          "suggestedActions":[
+            {
+              "type": "imBack",
+              "title": "Yes",
+              "value": "Yes"
+            },
+            {
+              "type": "imBack",
+              "title": "No",
+              "value": "No"
+            }
+          ]
         },
         {
           "type": "executeModule",
           "moduleName": "gccModuleDialog"
+        }
+      ]
+    },
+    {
+      "nodeId": "cc25e3aa-21d5-4dba-9454-f72228f4287e",
+      "parentIds": [
+        "1cac5298-3919-431e-ad2d-399c008f9a33"
+      ],
+      "condition": "Yes",
+      "responses": [
+        {
+          "type": "executeModule",
+          "moduleName": "gccModuleDialog"
+        }
+      ]
+    },
+    {
+      "nodeId": "cc0a173c-f28c-4320-915a-76da7b3354d3",
+      "parentIds": [
+        "1cac5298-3919-431e-ad2d-399c008f9a33"
+      ],
+      "condition": "No",
+      "responses": [
+        {
+          "type": "text",
+          "text": "Is there anything else I can help you with?"
         }
       ]
     }

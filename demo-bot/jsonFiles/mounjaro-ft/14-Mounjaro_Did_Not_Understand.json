@@ -1,6 +1,6 @@
 {
   "_id": "a6118e14-25cd-4d73-beb7-d4d8bcb04d3c",
-  "flowName": "14-Mounjaro_Did_Not_Understand",
+  "flowName": "14-Did_Not_Understand",
   "conversationType": "Medical",
   "intentName": "",
   "score": 0.4,
@@ -34,11 +34,11 @@
             },
             {
               "type": "messageBack",
-              "title": "Support resources.",
-              "text": "Support resources.",
-              "displayText": "Support resources.",
+              "title": "Support resources and/or assistance.",
+              "text": "Support resources and/or assistance.",
+              "displayText": "Support resources and/or assistance.",
               "value": {
-                "text": "Support resources.",
+                "text": "Support resources and/or assistance.",
                 "payload": {
                   "action": "triggerFlow",
                   "value": "12-Subcat_Support_Resources"
@@ -67,7 +67,7 @@
                 "text": "Done for today",
                 "payload": {
                   "action": "triggerFlow",
-                  "value": "13-Mounjaro_Offboarding"
+                  "value": "13-Offboarding"
                 }
               }
             }
@@ -121,7 +121,7 @@
                 "text": "Done for today",
                 "payload": {
                   "action": "triggerFlow",
-                  "value": "13-Mounjaro_Offboarding"
+                  "value": "13-Offboarding"
                 }
               }
             }
@@ -162,7 +162,7 @@
                   "text": "Done for today",
                   "payload": {
                     "action": "triggerFlow",
-                    "value": "13-Mounjaro_Offboarding"
+                    "value": "13-Offboarding"
                   }
                 }
               }
@@ -216,7 +216,7 @@
                     "text": "Done for today",
                     "payload": {
                       "action": "triggerFlow",
-                      "value": "13-Mounjaro_Offboarding"
+                      "value": "13-Offboarding"
                     }
                   }
                 }

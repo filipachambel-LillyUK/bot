@@ -69,7 +69,7 @@
                             "text" : "Other topics.",
                             "payload" : {
                                 "action" : "triggerFlow",
-                                "value" : "11-Mounjaro_Other_Topics"
+                                "value" : "11-Other_Topics"
                             }
                         }
                     },
@@ -82,7 +82,7 @@
                             "text" : "Done for today",
                             "payload" : {
                                 "action" : "triggerFlow",
-                                "value" : "13-Mounjaro_Offboarding"
+                                "value" : "13-Offboarding"
                             }
                         }
                     }

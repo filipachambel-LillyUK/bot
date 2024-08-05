@@ -1,0 +1,114 @@
+{
+  "_id": "59cd5622-ae45-45bb-9204-e86500125db6",
+  "flowName": "18-Vial_Response",
+  "conversationType": "Medical",
+  "intentName": "",
+  "score": 0.4,
+  "entities": "",
+  "nodes": [
+    {
+      "nodeId": "7e87b472-88af-4f8b-b10a-e79be7aff253",
+      "parentIds": ["ROOT"],
+      "condition": "",
+      "responses": [
+        {
+          "type": "text",
+          "text": "The current approved method of administration for Mounjaro is the Mounjaro Pen. It is not available for use with vial and syringe."
+        },
+        {
+          "type": "text",
+          "text": "*Mounjaro comes in a single-dose pen that requires no mixing.*\nThere is no need to see or handle the needle.†\n †Read the Instructions for Use included with your pen."
+        },
+        {
+          "type": "text",
+          "text": "*See how to use Mounjaro*\nGet all of the details in our video below or in the [Instructions for Use](https://uspl.lilly.com/mounjaro/mounjaro.html#ug0)\n\nhttps://youtu.be/BphNsbNAceM"
+        },
+        {
+          "type": "suggestedActions",
+          "text": "Is there anything else I can help you with?",
+          "suggestedActions": [
+            {
+              "type": "jumpFlow",
+              "collection": "opentext",
+              "flowId": "4d5dde8c-f707-48d8-9112-1b4cbcd3e2cc",
+              "flowName": "08-How_To_Use_Mounjaro",
+              "nodeId": "c24a6556-2d22-4f4b-b28e-161891aabdcb",
+              "responsesStartIndex": "0"
+            },
+            {
+              "type": "imBack",
+              "text": "Report a problem with your pen",
+              "value": "Report a problem with your pen"
+            },
+            {
+              "type": "messageBack",
+              "title": "Support resources and/or assistance.",
+              "text": "Support resources and/or assistance.",
+              "displayText": "Support resources and/or assistance.",
+              "value": {
+                "text": "Support resources and/or assistance.",
+                "payload": {
+                  "action": "triggerFlow",
+                  "value": "12-Subcat_Support_Resources"
+                }
+              }
+            },
+            {
+              "type": "messageBack",
+              "title": "Other topics.",
+              "text": "Other topics.",
+              "displayText": "Other topics.",
+              "value": {
+                "text": "Other topics.",
+                "payload": {
+                  "action": "triggerFlow",
+                  "value": "11-Other_Topics"
+                }
+              }
+            },
+            {
+              "type": "messageBack",
+              "title": "Done for today.",
+              "text": "Done for today.",
+              "displayText": "Done for today.",
+              "value": {
+                "text": "Done for today.",
+                "payload": {
+                  "action": "triggerFlow",
+                  "value": "13-Offboarding"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nodeId": "eeaa3a02-fc3d-42e0-812f-8f669bd94caf",
+      "parentIds": ["7e87b472-88af-4f8b-b10a-e79be7aff253"],
+      "condition": "Report a problem with your pen.",
+      "responses": [
+        {
+          "type": "text",
+          "text": "For reporting a problem with your pen, it's best if a live agent helps you."
+        },
+        {
+          "type": "text",
+          "text": "To speak to a live agent, please contact the Lilly Answers Center (TLAC) during business hours at 1-800-LillyRx (1-800-545-5979.)"
+        },
+        {
+          "type": "text",
+          "text": "The business hours are 9am to 5pm ET from Monday-Friday. Please note that agents will not be able to provide support for cost or savings inquiries."
+        },
+        {
+            "type": "jumpFlow",
+            "collection": "opentext",
+            "flowId": "59cd5622-ae45-45bb-9204-e86500125db6",
+            "flowName": "18-Vial_Response",
+            "nodeId": "7e87b472-88af-4f8b-b10a-e79be7aff253",
+            "responsesStartIndex": "3"
+          }
+      ]
+    }
+  ]
+}

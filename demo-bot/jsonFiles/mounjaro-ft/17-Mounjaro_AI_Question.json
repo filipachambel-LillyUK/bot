@@ -1,6 +1,6 @@
 {
     "_id": "d45bdc48-3065-4245-baa3-221bf3155055",
-    "flowName": "17-Mounjaro_AI_Question",
+    "flowName": "17-AI_Question",
     "conversationType": "Generic",
     "intentName": "",
     "score": 0.4,
@@ -16,6 +16,10 @@
           {
             "type": "text",
             "text": "I am an AI driven chatbot. I can help identify the topics you're searching for and provide information about Mounjaro or Type 2 diabetes quickly."
+          },
+          {
+            "type": "text",
+            "text": "Is there anything else I can help you with?"
           }      
         ]
       }

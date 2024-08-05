@@ -1,0 +1,63 @@
+{
+  "_id": "f806c271-5e80-4c7d-bc92-7c67f124ec13",
+  "flowName": "06-Savings_Coverage_Full_Tree",
+  "conversationType": "Medical",
+  "intentName": "",
+  "score": 0.4,
+  "entities": "",
+  "nodes": [
+    {
+      "nodeId": "d4254e08-4fa3-446f-a1a3-4d04a0d81aaf",
+      "parentIds": ["ROOT"],
+      "condition": "",
+      "responses": [
+        {
+          "type": "suggestedActions",
+          "text": "",
+          "suggestedActions": [
+            {
+              "type": "imBack",
+              "title": "Am I eligible for a savings card?",
+              "value": "Am I eligible for a savings card?"
+            },
+            {
+              "type": "imBack",
+              "title": "I'd like to get a savings card.",
+              "value": "I'd like to get a savings card."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nodeId": "774c7c10-178a-4e12-8431-0369dac02728",
+      "parentIds": ["d4254e08-4fa3-446f-a1a3-4d04a0d81aaf"],
+      "condition": "Am I eligible for a savings card?",
+      "responses": [
+        {
+          "type": "jumpFlow",
+          "collection": "opentext",
+          "flowId": "6cef38f3-1e6d-4fc0-afd4-e945377b3bbf",
+          "flowName": "06-Savings_Coverage_Card_Eligibility",
+          "nodeId": "981d2436-0750-4a35-b017-95add85cd2df",
+          "responsesStartIndex": "0"
+        }
+      ]
+    },
+    {
+        "nodeId": "ed1983cd-02c5-4951-a7af-6582a82b5637",
+        "parentIds": ["d4254e08-4fa3-446f-a1a3-4d04a0d81aaf"],
+        "condition": "I'd like to get a savings card.",
+        "responses": [
+          {
+            "type": "jumpFlow",
+            "collection": "opentext",
+            "flowId": "84fb8419-345e-4237-8399-a442fdf9ddfd",
+            "flowName": "06-Savings_Coverage_Get_Activate_Card",
+            "nodeId": "c3d0b569-cdf9-435c-ae75-a3b358722132",
+            "responsesStartIndex": "0"
+          }
+        ]
+      }
+  ]
+}
