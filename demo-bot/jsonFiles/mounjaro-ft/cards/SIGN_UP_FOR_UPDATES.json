@@ -17,8 +17,8 @@
 			"actions" : [
 				{
 					"type" : "Action.OpenUrl",
-					"title" : "Sign up for updates",
-					"url" : ""
+					"title" : "Sign up for Updates",
+					"url" : "https://mounjaro.lilly.com/savings-resources#resources"
 				}
 			]
 		}
