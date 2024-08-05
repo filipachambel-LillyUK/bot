@@ -1,0 +1,2545 @@
+[
+  {
+    "_id": "ROOT",
+    "flowName": "01-Main_entry_page",
+    "conversationType": "Generic",
+    "intentName": "intent_Onboarding",
+    "score": 0,
+    "entities": "",
+    "nodes": [
+      {
+        "nodeId": "f4bc17f5-056d-4a7a-93d4-c1fc987ec1df",
+        "parentIds": [
+          "ROOT"
+        ],
+        "condition": "",
+        "responses": [
+          {
+            "type": "event",
+            "name": "enableNormalSendBox",
+            "value": { 
+              "state": true
+             }
+          },
+          {
+            "type": "text",
+            "text": "Hi, I'm Lilly Assist, the Eli Lilly and Company AI-assisted chatbot. I was created to answer your questions about Mounjaro."
+          },
+          {
+            "type": "text",
+            "text": "*Please do not include any personal information, such as (i.e. name, email, date of birth)*"
+          },
+          {
+            "type": "suggestedActions",
+            "text": "What may I help you with today? Either type your question below or select from these categories.",
+            "suggestedActions": [
+              {
+                "type": "imBack",
+                "title": "I want to learn more. My doctor has not prescribed Mounjaro yet.",
+                "value": "I want to learn more. My doctor has not prescribed Mounjaro yet."
+              },
+              {
+                "type": "imBack",
+                "title": "My doctor has prescribed Mounjaro and I want to learn more.",
+                "value": "My doctor has prescribed Mounjaro and I want to learn more."
+              },
+              {
+                "type": "imBack",
+                "title": "I want to learn more about savings for Mounjaro.",
+                "value": "I want to learn more about savings for Mounjaro."
+              },
+              {
+                "type": "imBack",
+                "title": "I want to learn the latest information about supply availability for Mounjaro.",
+                "value": "I want to learn the latest information about supply availability for Mounjaro."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nodeId": "04eed400-2c3e-4bac-8658-d74cfd8397d7",
+        "parentIds": [
+          "f4bc17f5-056d-4a7a-93d4-c1fc987ec1df"
+        ],
+        "condition": "I want to learn more. My doctor has not prescribed Mounjaro yet.",
+        "responses": [
+          {
+            "type": "suggestedActions",
+            "text": "Please select the topic you would like to learn more about today.",
+            "suggestedActions": [
+              {
+                "type": "messageBack",
+                "title": "What is Mounjaro.",
+                "text": "What is Mounjaro.",
+                "displayText": "What is Mounjaro.",
+                "value": {
+                  "text": "What is Mounjaro.",
+                  "payload": {
+                    "action": "triggerFlow",
+                    "value": "02-What_Is_Mounjaro"
+                  }
+                }
+              },
+              {
+                "type": "messageBack",
+                "title": "How to talk with my doctor about Mounjaro.",
+                "text": "How to talk with my doctor about Mounjaro.",
+                "displayText": "How to talk with my doctor about Mounjaro.",
+                "value": {
+                  "text": "How to talk with my doctor about Mounjaro.",
+                  "payload": {
+                    "action": "triggerFlow",
+                    "value": "03-Talking_With_My_Doctor"
+                  }
+                }
+              },
+              {
+                "type": "messageBack",
+                "title": "Learn more about type 2 diabetes.",
+                "text": "Learn more about type 2 diabetes.",
+                "displayText": "Learn more about type 2 diabetes.",
+                "value": {
+                  "text": "Learn more about type 2 diabetes.",
+                  "payload": {
+                    "action": "triggerFlow",
+                    "value": "04-Understanding_Type_2_Diabetes"
+                  }
+                }
+              },
+              {
+                "type": "messageBack",
+                "title": "How Mounjaro works",
+                "text": "How Mounjaro works",
+                "displayText": "How Mounjaro works",
+                "value": {
+                  "text": "How Mounjaro works",
+                  "payload": {
+                    "action": "triggerFlow",
+                    "value": "05-How_Mounjaro_Works"
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nodeId": "141e47ce-4328-405a-a0d6-c29b8921ac2e",
+        "parentIds": [
+          "f4bc17f5-056d-4a7a-93d4-c1fc987ec1df"
+        ],
+        "condition": "My doctor has prescribed Mounjaro and I want to learn more.",
+        "responses": [
+          {
+            "type": "suggestedActions",
+            "text": "Please select the topic you would like to learn more about today.",
+            "suggestedActions": [
+              {
+                "type": "messageBack",
+                "title": "Savings.",
+                "text": "Savings.",
+                "displayText": "Savings.",
+                "value": {
+                  "text": "Savings.",
+                  "payload": {
+                    "action": "triggerFlow",
+                    "value": "06-Savings_Coverage_Full_Tree"
+                  }
+                }
+              },
+              {
+                "type": "messageBack",
+                "title": "Is Mounjaro supply available.",
+                "text": "Is Mounjaro supply available.",
+                "displayText": "Is Mounjaro supply available.",
+                "value": {
+                  "text": "Is Mounjaro supply available.",
+                  "payload": {
+                    "action": "triggerFlow",
+                    "value": "07-Is_Mounjaro_Supply_Available"
+                  }
+                }
+              },
+              {
+                "type": "messageBack",
+                "title": "How to use Mounjaro.",
+                "text": "How to use Mounjaro.",
+                "displayText": "How to use Mounjaro.",
+                "value": {
+                  "text": "How to use Mounjaro.",
+                  "payload": {
+                    "action": "triggerFlow",
+                    "value": "08-How_To_Use_Mounjaro"
+                  }
+                }
+              },
+              {
+                "type": "messageBack",
+                "title": "What to expect when taking Mounjaro.",
+                "text": "What to expect when taking Mounjaro.",
+                "displayText": "What to expect when taking Mounjaro.",
+                "value": {
+                  "text": "What to expect when taking Mounjaro.",
+                  "payload": {
+                    "action": "triggerFlow",
+                    "value": "09-Subcat_Hear_Patient_Stories"
+                  }
+                }
+              },
+              {
+                "type": "messageBack",
+                "title": "Support resources and/or assistance.",
+                "text": "Support resources and/or assistance.",
+                "displayText": "Support resources and/or assistance.",
+                "value": {
+                  "text": "Support resources and/or assistance.",
+                  "payload": {
+                    "action": "triggerFlow",
+                    "value": "12-Subcat_Support_Resources"
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nodeId": "18f8bd5e-63ee-4596-9227-e4ca6ed80e88",
+        "parentIds": [
+          "f4bc17f5-056d-4a7a-93d4-c1fc987ec1df"
+        ],
+        "condition": "I want to learn more about savings for Mounjaro.",
+        "responses": [
+          {
+            "type": "messageBack",
+            "title": "Insurance",
+            "text": "Insurance",
+            "displayText": "Insurance",
+            "value": {
+              "text": "Insurance",
+              "payload": {
+                "action": "triggerFlow",
+                "value": "06-Savings_Coverage_Subcat_Insurance"
+              }
+            }
+          },
+          {
+            "type": "messageBack",
+            "title": "Get or Activate a Savings Card",
+            "text": "Get or Activate a Savings Card",
+            "displayText": "Get or Activate a Savings Card",
+            "value": {
+              "text": "Get or Activate a Savings Card",
+              "payload": {
+                "action": "triggerFlow",
+                "value": "06-Savings_Coverage_Get_Activate_Card"
+              }
+            }
+          },
+          {
+            "type": "messageBack",
+            "title": "Savings Card Eligibility",
+            "text": "Savings Card Eligibility",
+            "displayText": "Savings Card Eligibility",
+            "value": {
+              "text": "Savings Card Eligibility",
+              "payload": {
+                "action": "triggerFlow",
+                "value": "06-Savings_Coverage_Card_Eligibility"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "nodeId": "5101c5f0-122d-4947-9325-fce74de4c74b",
+        "parentIds": [
+          "f4bc17f5-056d-4a7a-93d4-c1fc987ec1df"
+        ],
+        "condition": "I want to learn the latest information about supply availability for Mounjaro.",
+        "responses": [
+          {
+            "type": "text",
+            "text": "Visit [supply.lilly.com](https://supply.lilly.com/) for the latest information on availability of your Type 2 Diabetes medicine."
+          },
+          {
+            "type": "event",
+            "name": "enableFeedbackPrompt",
+            "value": {
+              "ResponseTagId": "01-Main_entry_page-I_want_to_learn_the_latest_information_about_supply_availability_for_Moujaro"
+            }
+          },
+          {
+            "type": "jumpFlow",
+            "collection": "opentext",
+            "flowId": "ROOT",
+            "flowName": "01-Main_entry_page",
+            "nodeId": "f4bc17f5-056d-4a7a-93d4-c1fc987ec1df",
+            "responsesStartIndex": "2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "e239233d-46b5-4449-9a4f-48112bee2f26",
+    "flowName": "02-What_Is_Mounjaro",
+    "conversationType": "Medical",
+    "intentName": "",
+    "score": 0,
+    "entities": "",
+    "nodes": [
+      {
+        "nodeId": "dc73e064-c006-4c9d-b246-46aea2ae0176",
+        "parentIds": [
+          "ROOT"
+        ],
+        "condition": "",
+        "responses": [
+          {
+            "type": "text",
+            "text": "Mounjaro is the first and only approved treatment in a different class of medication for type 2 diabetes.*\n\n\n\n *It works differently than other type 2 diabetes medications by directly activating GIP and GLP-1 Pathways to help regulate blood sugar.\n\n GIP= glucose-dependent insulinotropic polypeptide; GLP-1=glucagon-like peptide-1."
+          },
+          {
+            "type": "text",
+            "text": "Mounjaro is an injectable prescription medicine that is used along with diet and exercise to improve blood sugar (glucose) in adults with type 2 diabetes mellitus."
+          },
+          {
+            "type": "text",
+            "text": "It is not known if Mounjaro can be used in people who have had pancreatitis. Mounjaro is not for use in people with type 1 diabetes. It is not known if Mounjaro is safe and effective for use in children under 18 years of age."
+          },
+          {
+            "type": "event",
+            "name": "enableFeedbackPrompt",
+            "value": {
+              "ResponseTagId": "02-What_Is_Mounjaro"
+            }
+          },
+          {
+            "type": "text",
+            "text": "*Active ingredient:* tirzepatide\n*Inactive ingredients:* sodium chloride, sodium phosphate dibasic heptahydrate, and water for injection. Hydrochloric acid solution and/or sodium hydroxide solution may have been added to adjust the pH.\n\n View [Medication Guide](https://uspl.lilly.com/mounjaro/mounjaro.html#mg)."
+          },
+          {
+            "type": "event",
+            "name": "enableFeedbackPrompt",
+            "value": {
+              "ResponseTagId": "02-What_Is_Mounjaro-Ingredients"
+            }
+          },
+          {
+            "type": "suggestedActions",
+            "text": "What else can I help you with?",
+            "suggestedActions": [
+              {
+                "type": "messageBack",
+                "title": "How Mounjaro works.",
+                "text": "How Mounjaro works.",
+                "displayText": "How Mounjaro works.",
+                "value": {
+                  "text": "How Mounjaro works.",
+                  "payload": {
+                    "action": "triggerFlow",
+                    "value": "05-How_Mounjaro_Works"
+                  }
+                }
+              },
+              {
+                "type": "messageBack",
+                "title": "How to talk with my doctor about Mounjaro.",
+                "text": "How to talk with my doctor about Mounjaro.",
+                "displayText": "How to talk with my doctor about Mounjaro.",
+                "value": {
+                  "text": "How to talk with my doctor about Mounjaro.",
+                  "payload": {
+                    "action": "triggerFlow",
+                    "value": "03-Talking_With_My_Doctor"
+                  }
+                }
+              },
+              {
+                "type": "messageBack",
+                "title": "Support resources and/or assistance.",
+                "text": "Support resources and/or assistance.",
+                "displayText": "Support resources and/or assistance.",
+                "value": {
+                  "text": "Support resources and/or assistance.",
+                  "payload": {
+                    "action": "triggerFlow",
+                    "value": "12-Subcat_Support_Resources"
+                  }
+                }
+              },
+              {
+                "type": "messageBack",
+                "title": "Other topics.",
+                "text": "Other topics.",
+                "displayText": "Other topics.",
+                "value": {
+                  "text": "Other topics.",
+                  "payload": {
+                    "action": "triggerFlow",
+                    "value": "11-Other_Topics"
+                  }
+                }
+              },
+              {
+                "type": "messageBack",
+                "title": "Done for today.",
+                "text": "Done for today.",
+                "displayText": "Done for today.",
+                "value": {
+                  "text": "Done for today.",
+                  "payload": {
+                    "action": "triggerFlow",
+                    "value": "13-Offboarding"
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "354329ff-1801-45f3-9635-323ef078ef2f",
+    "flowName": "03-Talking_With_My_Doctor",
+    "conversationType": "Medical",
+    "intentName": "",
+    "score": 0,
+    "entities": "",
+    "nodes": [
+      {
+        "nodeId": "12640d75-8a37-4a51-9997-d76a8b9b338c",
+        "parentIds": [
+          "ROOT"
+        ],
+        "condition": "",
+        "responses": [
+          {
+            "type": "text",
+            "text": "Mounjaro is an injectible prescription medicine that is used along with diet and exercise to improve blood sugar (glucose) in adults with type 2 diabetes mellitus.\n\n*Indication*\nMounjaro® (mown-JAHR-OH) is an injectable medicine for adults with type 2 diabetes used along with diet and exercise to improve blood sugar (glucose).\n\n- It is not known if Mounjaro can be used in people who have had inflammation of the pancreas (pancreatitis). Mounjaro is not for use in people with type 1 diabetes. It is not known if Mounjaro is safe and effective for use in children under 18 years of age."
+          },
+          {
+            "type": "event",
+            "name": "enableFeedbackPrompt",
+            "value": {
+              "ResponseTagId": "03-Talking_With_My_Doctor"
+            }
+          },
+          {
+            "type": "text",
+            "text": "If you need help finding a doctor, our LillyDirect resource might help you. You can get access to a telemedicine provider or in person care by pressing [here](https://lillydirect.lilly.com/).\n\n[Telehealth Disclaimers | LillyDirect](https://lillydirect.lilly.com/disclaimers)™"
+          },
+          {
+            "type": "suggestedActions",
+            "text": "What else can I help you with?",
+            "suggestedActions": [
+              {
+                "type": "messageBack",
+                "title": "How Mounjaro works.",
+                "text": "How Mounjaro works.",
+                "displayText": "How Mounjaro works.",
+                "value": {
+                  "text": "How Mounjaro works.",
+                  "payload": {
+                    "action": "triggerFlow",
+                    "value": "05-How_Mounjaro_Works"
+                  }
+                }
+              },
+              {
+                "type": "messageBack",
+                "title": "Savings.",
+                "text": "Savings.",
+                "displayText": "Savings.",
+                "value": {
+                  "text": "Savings.",
+                  "payload": {
+                    "action": "triggerFlow",
+                    "value": "06-Savings_Coverage_Full_Tree"
+                  }
+                }
+              },
+              {
+                "type": "messageBack",
+                "title": "Support resources and/or assistance.",
+                "text": "Support resources and/or assistance.",
+                "displayText": "Support resources and/or assistance.",
+                "value": {
+                  "text": "Support resources and/or assistance.",
+                  "payload": {
+                    "action": "triggerFlow",
+                    "value": "12-Subcat_Support_Resources"
+                  }
+                }
+              },
+              {
+                "type": "messageBack",
+                "title": "Other topics.",
+                "text": "Other topics.",
+                "displayText": "Other topics.",
+                "value": {
+                  "text": "Other topics.",
+                  "payload": {
+                    "action": "triggerFlow",
+                    "value": "11-Other_Topics"
+                  }
+                }
+              },
+              {
+                "type": "messageBack",
+                "title": "Done for today.",
+                "text": "Done for today.",
+                "displayText": "Done for today.",
+                "value": {
+                  "text": "Done for today.",
+                  "payload": {
+                    "action": "triggerFlow",
+                    "value": "13-Offboarding"
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "a081c621-300c-43d7-a17c-21bb530671b0",
+    "flowName": "04-Understanding_Type_2_Diabetes_And_A1C",
+    "conversationType": "Medical",
+    "intentName": "",
+    "score": 0,
+    "entities": "",
+    "nodes": [
+      {
+        "nodeId": "db3a4fe4-8b9b-41f7-ad4c-57a87ed22d9f",
+        "parentIds": [
+          "ROOT"
+        ],
+        "condition": "",
+        "responses": [
+          {
+            "type": "text",
+            "text": "In the body, the hormone insulin is made by the pancreas and helps your body use or store the blood sugar it gets from food.\n\n*If you have type 2 diabetes:*\n\nYour body doesn't make enough insulin, doesn't use insulin well, or both.\n\nSince the sugar is not being used for energy, it stays in your blood.\n\nThis leads to high blood sugar. Over time, this could hurt your eyes, kidneys, nerves, heart, and blood vessels."
+          },
+          {
+            "type": "text",
+            "text": "One part of managing type 2 diabetes is managing A1C.\n\n*What the A1C test does*\nThe A1C test measures your average blood sugar level over the past 2 to 3 months. The higher your blood sugar, the higher your risk of developing diabetes related problems. Usually people with type 2 diabetes get an A1C test at least twice a year.\n\n*What the results mean*\nA1C levels are numbers in the form of a percentage. A high percentage means a high blood sugar level. According to the ADA, the goal for most adults with type 2 diabetes is an A1C level that is less than 7%.\n\nYour doctor will help you set your individual goal."
+          },
+          {
+            "type": "event",
+            "name": "enableFeedbackPrompt",
+            "value": {
+              "ResponseTagId": "04-Understanding_Type_2_Diabetes_And_A1C"
+            }
+          },
+          {
+            "type": "suggestedActions",
+            "text": "What else can I help you with?",
+            "suggestedActions": [
+              {
+                "type": "messageBack",
+                "title": "What is Mounjaro.",
+                "text": "What is Mounjaro.",
+                "displayText": "What is Mounjaro.",
+                "value": {
+                  "text": "What is Mounjaro.",
+                  "payload": {
+                    "action": "triggerFlow",
+                    "value": "02-What_Is_Mounjaro"
+                  }
+                }
+              },
+              {
+                "type": "messageBack",
+                "title": "How Mounjaro works.",
+                "text": "How Mounjaro works.",
+                "displayText": "How Mounjaro works.",
+                "value": {
+                  "text": "How Mounjaro works.",
+                  "payload": {
+                    "action": "triggerFlow",
+                    "value": "05-How_Mounjaro_Works"
+                  }
+                }
+              },
+              {
+                "type": "messageBack",
+                "title": "How to talk with my doctor about Mounjaro.",
+                "text": "How to talk with my doctor about Mounjaro.",
+                "displayText": "How to talk with my doctor about Mounjaro.",
+                "value": {
+                  "text": "How to talk with my doctor about Mounjaro.",
+                  "payload": {
+                    "action": "triggerFlow",
+                    "value": "03-Talking_With_My_Doctor"
+                  }
+                }
+              },
+              {
+                "type": "messageBack",
+                "title": "Support resources and/or assistance.",
+                "text": "Support resources and/or assistance.",
+                "displayText": "Support resources and/or assistance.",
+                "value": {
+                  "text": "Support resources and/or assistance.",
+                  "payload": {
+                    "action": "triggerFlow",
+                    "value": "12-Subcat_Support_Resources"
+                  }
+                }
+              },
+              {
+                "type": "messageBack",
+                "title": "Other topics.",
+                "text": "Other topics.",
+                "displayText": "Other topics.",
+                "value": {
+                  "text": "Other topics.",
+                  "payload": {
+                    "action": "triggerFlow",
+                    "value": "11-Other_Topics"
+                  }
+                }
+              },
+              {
+                "type": "messageBack",
+                "title": "Done for today.",
+                "text": "Done for today.",
+                "displayText": "Done for today.",
+                "value": {
+                  "text": "Done for today.",
+                  "payload": {
+                    "action": "triggerFlow",
+                    "value": "13-Offboarding"
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "17dbb1c2-4626-4c64-949b-15ea6da81ddb",
+    "flowName": "04-Understanding_Type_2_Diabetes_And_Weight_Management",
+    "conversationType": "Medical",
+    "intentName": "",
+    "score": 0,
+    "entities": "",
+    "nodes": [
+      {
+        "nodeId": "468e1fa3-dc7c-4279-bc48-0ea71b8f56c3",
+        "parentIds": [
+          "ROOT"
+        ],
+        "condition": "",
+        "responses": [
+          {
+            "type": "text",
+            "text": "*One thing that can increase the risk of type 2 diabetes is being overweight. It can lead to your body having a harder time using the insulin it makes because it has trouble using sugar in the blood.*\n\nYour pancreas keeps making insulin, but your body doesn't respond to insulin like it used to.\n\n*Losing weight could help improve how your body responds to the insulin it makes and help lower blood sugar.*\n\nAccording to the American Diabetes Association (ADA), sometimes, losing just 5%-7% of your body weight is enough to improve diabetes control. For someone who weighs 200 pounds, this is a weight loss of just 10-15 pounds."
+          },
+          {
+            "type": "event",
+            "name": "enableFeedbackPrompt",
+            "value": {
+              "ResponseTagId": "04-Understanding_Type_2_Diabetes_And_Weight_Management"
+            }
+          },
+          {
+            "type": "suggestedActions",
+            "text": "What else can I help you with?",
+            "suggestedActions": [
+              {
+                "type": "messageBack",
+                "title": "What is Mounjaro.",
+                "text": "What is Mounjaro.",
+                "displayText": "What is Mounjaro.",
+                "value": {
+                  "text": "What is Mounjaro.",
+                  "payload": {
+                    "action": "triggerFlow",
+                    "value": "02-What_Is_Mounjaro"
+                  }
+                }
+              },
+              {
+                "type": "messageBack",
+                "title": "How Mounjaro works.",
+                "text": "How Mounjaro works.",
+                "displayText": "How Mounjaro works.",
+                "value": {
+                  "text": "How Mounjaro works.",
+                  "payload": {
+                    "action": "triggerFlow",
+                    "value": "05-How_Mounjaro_Works"
+                  }
+                }
+              },
+              {
+                "type": "messageBack",
+                "title": "How to talk with my doctor about Mounjaro.",
+                "text": "How to talk with my doctor about Mounjaro.",
+                "displayText": "How to talk with my doctor about Mounjaro.",
+                "value": {
+                  "text": "How to talk with my doctor about Mounjaro.",
+                  "payload": {
+                    "action": "triggerFlow",
+                    "value": "03-Talking_With_My_Doctor"
+                  }
+                }
+              },
+              {
+                "type": "messageBack",
+                "title": "Support resources and/or assistance.",
+                "text": "Support resources and/or assistance.",
+                "displayText": "Support resources and/or assistance.",
+                "value": {
+                  "text": "Support resources and/or assistance.",
+                  "payload": {
+                    "action": "triggerFlow",
+                    "value": "12-Subcat_Support_Resources"
+                  }
+                }
+              },
+              {
+                "type": "messageBack",
+                "title": "Other topics.",
+                "text": "Other topics.",
+                "displayText": "Other topics.",
+                "value": {
+                  "text": "Other topics.",
+                  "payload": {
+                    "action": "triggerFlow",
+                    "value": "11-Other_Topics"
+                  }
+                }
+              },
+              {
+                "type": "messageBack",
+                "title": "Done for today.",
+                "text": "Done for today.",
+                "displayText": "Done for today.",
+                "value": {
+                  "text": "Done for today.",
+                  "payload": {
+                    "action": "triggerFlow",
+                    "value": "13-Offboarding"
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "507a2729-5862-4122-a9fb-5e3efbab2f8d",
+    "flowName": "04-Understanding_Type_2_Diabetes",
+    "conversationType": "Medical",
+    "intentName": "",
+    "score": 0,
+    "entities": "",
+    "nodes": [
+      {
+        "nodeId": "611fb370-e938-4e47-9439-c5fc7a2d3dcf",
+        "parentIds": [
+          "ROOT"
+        ],
+        "condition": "",
+        "responses": [
+          {
+            "type": "text",
+            "text": "You and your doctor will work together to make an appropriate treatment plan for your type 2 diabetes. This can include eating healthy, exercising more, and possibly taking a diabetes medication. These changes may help you reach a healthier blood-sugar level and weight."
+          },
+          {
+            "type": "event",
+            "name": "enableFeedbackPrompt",
+            "value": {
+              "ResponseTagId": "04-Understanding_Type_2_Diabetes"
+            }
+          },
+          {
+            "type": "suggestedActions",
+            "text": "What else can I help you with?",
+            "suggestedActions": [
+              {
+                "type": "messageBack",
+                "title": "What is Mounjaro.",
+                "text": "What is Mounjaro.",
+                "displayText": "What is Mounjaro.",
+                "value": {
+                  "text": "What is Mounjaro.",
+                  "payload": {
+                    "action": "triggerFlow",
+                    "value": "02-What_Is_Mounjaro"
+                  }
+                }
+              },
+              {
+                "type": "messageBack",
+                "title": "How Mounjaro works.",
+                "text": "How Mounjaro works.",
+                "displayText": "How Mounjaro works.",
+                "value": {
+                  "text": "How Mounjaro works.",
+                  "payload": {
+                    "action": "triggerFlow",
+                    "value": "05-How_Mounjaro_Works"
+                  }
+                }
+              },
+              {
+                "type": "messageBack",
+                "title": "How to talk with my doctor about Mounjaro.",
+                "text": "How to talk with my doctor about Mounjaro.",
+                "displayText": "How to talk with my doctor about Mounjaro.",
+                "value": {
+                  "text": "How to talk with my doctor about Mounjaro.",
+                  "payload": {
+                    "action": "triggerFlow",
+                    "value": "03-Talking_With_My_Doctor"
+                  }
+                }
+              },
+              {
+                "type": "messageBack",
+                "title": "Support resources and/or assistance.",
+                "text": "Support resources and/or assistance.",
+                "displayText": "Support resources.",
+                "value": {
+                  "text": "Support resources and/or assistance.",
+                  "payload": {
+                    "action": "triggerFlow",
+                    "value": "12-Subcat_Support_Resources"
+                  }
+                }
+              },
+              {
+                "type": "messageBack",
+                "title": "Other topics.",
+                "text": "Other topics.",
+                "displayText": "Other topics.",
+                "value": {
+                  "text": "Other topics.",
+                  "payload": {
+                    "action": "triggerFlow",
+                    "value": "11-Other_Topics"
+                  }
+                }
+              },
+              {
+                "type": "messageBack",
+                "title": "Done for today.",
+                "text": "Done for today.",
+                "displayText": "Done for today.",
+                "value": {
+                  "text": "Done for today.",
+                  "payload": {
+                    "action": "triggerFlow",
+                    "value": "13-Offboarding"
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "38dd8233-ceb0-416f-877f-196a9358525a",
+    "flowName": "05-How_Mounjaro_Works",
+    "conversationType": "Medical",
+    "intentName": "",
+    "score": 0,
+    "entities": "",
+    "nodes": [
+      {
+        "nodeId": "ae1f5845-09a1-4164-a493-ad8535524a1e",
+        "parentIds": ["ROOT"],
+        "condition": "",
+        "responses": [
+          {
+            "type": "text",
+            "text": "Mounjaro works in multiple ways. It helps:\n\n - The body release insulin when blood sugar is high\n\n - The body remove excess sugar from the blood\n\n - Stop the liver from making and releasing too much sugar\n\n - Reduce how much food is eaten\n\n - Slow down how quickly food leaves the stomach. This lessens over time"
+          },
+          {
+            "type": "text",
+            "text": "Up to 90% of people taking Mounjaro reached an A1C under 7%. †\n\n †In studies with or without other diabetes medications, the percentage of people taking Mounjaro who reached an A1C of less than 7% ranged from 75% (5 mg) to 90% (10 mg). People had an average starting A1C of 7.9% to 8.6% across the 5-mg, 10-mg, and 15-mg doses. A 40-week study was conducted to see if Mounjaro 5-mg, 10-mg, and 15-mg plus a basal insulin worked better than basal insulin alone. 90% of people taking Mounjaro 10-mg plus basal insulin achieved an A1C of under 7%.\n\n [Press here](https://www.mounjaro.com/what-is-mounjaro#about-mounjaro) to view more information."
+          },
+          {
+            "type": "event",
+            "name": "enableFeedbackPrompt",
+            "value": {
+              "ResponseTagId": "05-How_Mounjaro_Works"
+            }
+          },
+          {
+            "type": "suggestedActions",
+            "text": "What else can I help you with?",
+            "suggestedActions": [
+              {
+                "type": "messageBack",
+                "title": "How to talk with my doctor about Mounjaro.",
+                "text": "How to talk with my doctor about Mounjaro.",
+                "displayText": "How to talk with my doctor about Mounjaro.",
+                "value": {
+                  "text": "How to talk with my doctor about Mounjaro.",
+                  "payload": {
+                    "action": "triggerFlow",
+                    "value": "03-Talking_With_My_Doctor"
+                  }
+                }
+              },
+              {
+                "type": "messageBack",
+                "title": "Savings.",
+                "text": "Savings.",
+                "displayText": "Savings.",
+                "value": {
+                  "text": "Savings.",
+                  "payload": {
+                    "action": "triggerFlow",
+                    "value": "06-Savings_Coverage_Full_Tree"
+                  }
+                }
+              },
+              {
+                "type": "messageBack",
+                "title": "Support resources and/or assistance.",
+                "text": "Support resources and/or assistance.",
+                "displayText": "Support resources and/or assistance.",
+                "value": {
+                  "text": "Support resources and/or assistance.",
+                  "payload": {
+                    "action": "triggerFlow",
+                    "value": "12-Subcat_Support_Resources"
+                  }
+                }
+              },
+              {
+                "type": "messageBack",
+                "title": "Other topics.",
+                "text": "Other topics.",
+                "displayText": "Other topics.",
+                "value": {
+                  "text": "Other topics.",
+                  "payload": {
+                    "action": "triggerFlow",
+                    "value": "11-Other_Topics"
+                  }
+                }
+              },
+              {
+                "type": "messageBack",
+                "title": "Done for today.",
+                "text": "Done for today.",
+                "displayText": "Done for today.",
+                "value": {
+                  "text": "Done for today.",
+                  "payload": {
+                    "action": "triggerFlow",
+                    "value": "13-Offboarding"
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "6cef38f3-1e6d-4fc0-afd4-e945377b3bbf",
+    "flowName": "06-Savings_Coverage_Card_Eligibility",
+    "conversationType": "Medical",
+    "intentName": "",
+    "score": 0,
+    "entities": "",
+    "nodes": [
+      {
+        "nodeId": "981d2436-0750-4a35-b017-95add85cd2df",
+        "parentIds": [
+          "ROOT"
+        ],
+        "condition": "",
+        "responses": [
+          {
+            "type": "text",
+            "text": "You are eligible for the Mounjaro savings card if you meet all of the following requirements."
+          },
+          {
+            "type": "text",
+            "text": "If you are eligible, you may pay as little as $25 for a 1-month or 3-month prescription of Mounjaro.* See how to get a Mounjaro Savings Card below.\n\n*For eligible commercially insured patients with Mounjaro coverage. *Governmental beneficiaries excluded. See elgibility requirements. [Terms and conditions](https://www.mounjaro.com/savings-resources#) apply.*\n\nOne month is defined as 28 days and 4 pens. Three months is defined as 84 days and up to 12 pens.\n\nIf you are not elgible, [www.lillypricinginfo.com/mounjaro](https://pricinginfo.lilly.com/mounjaro) has information on other types of affordability solutions."
+          },
+          {
+            "type": "event",
+            "name": "enableFeedbackPrompt",
+            "value": {
+              "ResponseTagId": "06-Savings_Coverage_Card_Eligibility"
+            }
+          },
+          {
+            "type": "text",
+            "text": "By enrolling in and using the Mounjaro Savings Card Program (\"Program\") and using the Mounjaro Savings Card (\"Card\"), you attest that you meet the eligibility criteria, and you agree to comply with the terms and conditions described below:\n*Card Eligibility:\n(1.) You have been prescribed Mounjaro consistent with FDA approved product labeling.\n\n (2.) You are enrolled in a commercial insurance plan.\n\n (3.) *You are not enrolled in any state, federal, or government funded healthcare program, including, without limitation, Medicaid, Medicare, Medicare Part D, Medicare Advantage, Medigap, DoD, VA, TRICARE®/CHAMPUS, or any state prescription drug assistance program;*\n(4.) You are a resident of the United States or Puerto Rico.\n(5.) You are 18 years of age or older."
+          },
+          {
+            "type": "text",
+            "text": "*Card Terms and Conditions*\nFor patients with commercial insurance coverage for Mounjaro: You must have commercial insurance that covers Mounjaro® (tirzepatide) and a prescription consistent with FDA-approved product labeling to pay as little as $25 for a 1-month, 2-month, or 3-month prescription fill of Mounjaro. Month is defined as 28-days and up to 4 pens. Card savings are subject to a maximum monthly savings of up to $150 per 1-month prescription, $300 per 2-month prescription, or $450 per 3-month prescription fill and separate maximum annual savings of up to $1800 per calendar year. Card may be used for a maximum of up to 13 prescription fills per calendar year. Subject to Lilly USA, LLC's (\"Lilly\") right to terminate, rescind, revoke, or amend Card eligibility criteria and/or Card terms and conditions which may occur at Lilly's sole discretion, without notice, and for any reason, Card expires and savings end on 12/31/2024."
+          },
+          {
+            "type": "text",
+            "text": "For patients with commercial insurance who do not have coverage for Mounjaro: You must have commercial insurance that does not cover Mounjaro and a prescription consistent with FDA-approved product labeling to obtain savings of up to $473 off your 1-month prescription fill of Mounjaro. Month is defined as 28-days and up to 4 pens. Card savings are subject to a maximum monthly savings of up to $473 and a separate maximum annual savings of up to $2,365 per calendar year. Card may be used for a maximum of up to 5 prescription fills per calendar year. Subject to Lilly's right to terminate, rescind, revoke, or amend Card eligibility criteria and/or Card terms and conditions which may occur at Lilly's sole discretion, without notice, and for any reason, Card expires and savings end on 12/31/2024."
+          },
+          {
+            "type": "text",
+            "text": "*Additional Terms and Conditions* If you have an insurance plan that is participating in an alternate funding program (\"AFP\") (examples include, but are not limited to, ImpaxRX, Payer Matrix, SHARx, Script Sourcing, and Paydhealth) that requires you to apply to the Mounjaro Savings Card Program or otherwise pursue specialty drug prescription coverage through an alternate funding vendor as a condition of, requirement for, or prerequisite to coverage of Mounjaro, you are not eligible for and are prohibited from using the Mounjaro Savings Card Program. AFPs include programs where coverage, reimbursement, or patient out of pocket costs for a product in some way vary based on the availability of a manufacturer co-pay program. AFPs may modify, delay, deny, restrict, or withhold insurance benefits or coverage from patients, or exclude Lilly products from coverage contingent upon a member's use of Mounjaro Savings Card Program. You agree to inform the Mounjaro Savings Card Program if you are or become a member of such an alternative funding program. You are responsible for any applicable taxes, fees, and any amount that exceeds the monthly or annual maximum Card savings. Monthly and annual maximum savings are set at Lilly's sole and absolute discretion and may be changed with or without notice at any time for any reason. At its sole discretion and with or without notice, Lilly may reduce, eliminate, or otherwise modify the Card savings for any reason, including but not limited to if your commercial drug insurance plan imposes additional requirements which limits or prevents you from receiving coverage for Mounjaro, only allows partial coverage for Mounjaro, removes coverage for Mounjaro and requires you to utilize the Card, does not provide a material level of financial assistance for the cost of Mounjaro, or does not apply Card payments to satisfy your co-payment, deductible, or coinsurance for Mounjaro. Card savings are not valid for: Massachusetts residents if an AB-rated generic equivalent is available; California residents if an FDA-approved therapeutic equivalent is available. You must meet the Card eligibility criteria, terms and conditions every time you use the Card. Card activation is required. You may not seek reimbursement from your health insurance, any third party, or any health savings, flexible spending, or other healthcare reimbursement accounts, for any amount of the savings received through the Card. By utilizing the Card, you agree that if you are required to do so under the terms of your insurance coverage for this prescription or are otherwise required to do so by law, you will notify your Insurance Carrier of your redemption of the Card. Card savings cannot be combined or utilized with any other program, discount, discount card, cash discount card, coupon, incentive, or similar offer involving Mounjaro. You agree that this Card savings is intended solely for the benefit of you, the patient, and that the Card benefits are nontransferable. It is prohibited for any person to sell, purchase, or trade; or to offer to sell, purchase, or trade, or to counterfeit the Card. The Card is not insurance. Lilly has the sole right to interpret and apply Card eligibility criteria, and terms and conditions. Card eligibility, and terms and conditions may be terminated, rescinded, revoked, or amended by Lilly at any time without notice and for any reason. Lilly's sole discretion to terminate, rescind, revoke, or amend Card eligibility criteria and/or Card terms and conditions includes the right to terminate any individual Card if Lilly determines, in its sole discretion, that a patient does not satisfy the Card?s eligibility criteria or is using or has attempted to use the Card inconsistently with these Terms and Conditions. Eligibility criteria, and terms and conditions for the Mounjaro Savings Card Program may change from time to time; the most current version can be found at https://www.mounjaro.lilly.com/savings-resources#savings. You may be required to obtain a new Card, including if any Card terms and conditions have been terminated, rescinded, revoked, or amended by Lilly. Card void where prohibited by law. Subject to Lilly's right to terminate, rescind, revoke, or amend Card eligibility criteria and/or Card terms and conditions which may occur at Lilly's sole discretion, without notice, and for any reason, the Card expires and savings end on 12/31/2024."
+          },
+          {
+            "type": "event",
+            "name": "enableFeedbackPrompt",
+            "value": {
+              "ResponseTagId": "06-Savings_Coverage_Card_Eligibility"
+            }
+          },
+          {
+            "type": "suggestedActions",
+            "text": "What else can I help you with today?",
+            "suggestedActions": [
+              {
+                "type": "messageBack",
+                "title": "Support resources and/or assistance.",
+                "text": "Support resources and/or assistance.",
+                "displayText": "Support resources and/or assistance.",
+                "value": {
+                  "text": "Support resources and/or assistance.",
+                  "payload": {
+                    "action": "triggerFlow",
+                    "value": "12-Subcat_Support_Resources"
+                  }
+                }
+              },
+              {
+                "type": "messageBack",
+                "title": "Other topics.",
+                "text": "Other topics.",
+                "displayText": "Other topics.",
+                "value": {
+                  "text": "Other topics.",
+                  "payload": {
+                    "action": "triggerFlow",
+                    "value": "11-Other_Topics"
+                  }
+                }
+              },
+              {
+                "type": "messageBack",
+                "title": "Done for today.",
+                "text": "Done for today.",
+                "displayText": "Done for today.",
+                "value": {
+                  "text": "Done for today.",
+                  "payload": {
+                    "action": "triggerFlow",
+                    "value": "13-Offboarding"
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "84fb8419-345e-4237-8399-a442fdf9ddfd",
+    "flowName": "06-Savings_Coverage_Get_Activate_Card",
+    "conversationType": "Medical",
+    "intentName": "",
+    "score": 0,
+    "entities": "",
+    "nodes": [
+      {
+        "nodeId": "c3d0b569-cdf9-435c-ae75-a3b358722132",
+        "parentIds": [
+          "ROOT"
+        ],
+        "condition": "",
+        "responses": [
+          {
+            "type": "text",
+            "text": "[Press here](https://mounjaro.lilly.com/savings-resources#savings) to complete the steps to download your savings card.\n\nYour card will already be activated when you receive it, so all you have to do next is to show it to your pharmacist when you go to pick up your prescription."
+          },
+          {
+            "type": "text",
+            "text": "If you have questions about the savings program or are experiencing issues with your savings card, we're here to help you any way we can.\nCall us at 1-833-807-MJRO (833-807-6576)."
+          },
+          {
+            "type": "suggestedActions",
+            "text": "What else can I help you with today?",
+            "suggestedActions": [
+              {
+                "type": "messageBack",
+                "title": "Support resources and/or assistance.",
+                "text": "Support resources and/or assistance..",
+                "displayText": "Support resources and/or assistance.",
+                "value": {
+                  "text": "Support resources and/or assistance.",
+                  "payload": {
+                    "action": "triggerFlow",
+                    "value": "12-Subcat_Support_Resources"
+                  }
+                }
+              },
+              {
+                "type": "messageBack",
+                "title": "Other topics.",
+                "text": "Other topics.",
+                "displayText": "Other topics.",
+                "value": {
+                  "text": "Other topics.",
+                  "payload": {
+                    "action": "triggerFlow",
+                    "value": "11-Other_Topics"
+                  }
+                }
+              },
+              {
+                "type": "messageBack",
+                "title": "Done for today.",
+                "text": "Done for today.",
+                "displayText": "Done for today.",
+                "value": {
+                  "text": "Done for today.",
+                  "payload": {
+                    "action": "triggerFlow",
+                    "value": "13-Offboarding"
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "f1b6440e-fd8c-4680-a5e1-5a1e8b1c770f",
+    "flowName": "06-Savings_Coverage_Subcat_Insurance",
+    "conversationType": "Medical",
+    "intentName": "",
+    "score": 0.4,
+    "entities": "",
+    "nodes": [
+      {
+        "nodeId": "8adb1cad-74c3-4f51-84b0-182d1bab795a",
+        "parentIds": [
+          "ROOT"
+        ],
+        "condition": "",
+        "responses": [
+          {
+            "type": "suggestedActions",
+            "text": "Which of the following best describes your current insurance situation?",
+            "suggestedActions": [
+              {
+                "type": "imBack",
+                "title": "I have commercial insurance.",
+                "value": "I have commercial insurance."
+              },
+              {
+                "type": "imBack",
+                "title": "I do not have commercial insurance, I have another type of insurance.",
+                "value": "I do not have commercial insurance, I have another type of insurance."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nodeId": "9f6b6830-74d6-48c7-b188-680fa90b5b9a",
+        "parentIds": [
+          "8adb1cad-74c3-4f51-84b0-182d1bab795a"
+        ],
+        "condition": "I have commercial insurance.",
+        "responses": [
+          {
+            "type": "text",
+            "text": "Great! To confirm if your insurance provider covers Mounjaro, contact the customer assistance number on your insurance card."
+          },
+          {
+            "type": "event",
+            "name": "enableFeedbackPrompt",
+            "value": {
+              "ResponseTagId": "06-Savings_Coverage_Subcat_Insurance-I_have_commercial_insurance"
+            }
+          },
+          {
+            "type": "suggestedActions",
+            "text": "",
+            "suggestedActions": [
+              {
+                "type": "messageBack",
+                "title": "I do not have a prescription and need support talking with my doctor.",
+                "text": "I do not have a prescription and need support talking with my doctor.",
+                "displayText": "I do not have a prescription and need support talking with my doctor.",
+                "value": {
+                  "text": "I do not have a prescription and need support talking with my doctor.",
+                  "payload": {
+                    "action": "triggerFlow",
+                    "value": "03-Talking_With_My_Doctor"
+                  }
+                }
+              },
+              {
+                "type": "messageBack",
+                "title": "Yes I have a prescription from my doctor and I'd like to get a savings card.",
+                "text": "Yes I have a prescription from my doctor and I'd like to get a savings card.",
+                "displayText": "Yes I have a prescription from my doctor and I'd like to get a savings card.",
+                "value": {
+                  "text": "Yes I have a prescription from my doctor and I'd like to get a savings card.",
+                  "payload": {
+                    "action": "triggerFlow",
+                    "value": "06-Savings_Coverage_Get_Activate_Card"
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nodeId": "60039243-7446-43f6-bb2c-68fd49486eda",
+        "parentIds": ["8adb1cad-74c3-4f51-84b0-182d1bab795a"],
+        "condition": "I do not have commercial insurance, I have another type of insurance.",
+        "responses": [
+          {
+            "type": "text",
+            "text": "Card savings are not available to patients without commercial drug insurance or who are enrolled in any state, federal, or government funded health care program, including, without limitation, Medicaid, Medicare, Medicare Part D, Medicare Advantage, Medigap, DoD, VA, TRICARE®/CHAMPUS, or any state prescription drug assistance program."
+          },
+          {
+            "type": "text",
+            "text": "The United States Department of Health and Human Services (HHS) regulations preclude all pharmaceutical manufacturers from providing co-pay and savings card benefits to government insured patients."
+          },
+          {
+            "type": "event",
+            "name": "enableFeedbackPrompt",
+            "value": {
+              "ResponseTagId": "06-Savings_Coverage_Subcat_Insurance-I_have_another_type_of_insurance_or_I_do_not_have_insurance."
+            }
+          },
+          {
+            "type": "suggestedActions",
+            "text": "What else can I help you with today?",
+            "suggestedActions": [
+              {
+                "type": "messageBack",
+                "title": "Support resources and/or assistance.",
+                "text": "Support resources and/or assistance..",
+                "displayText": "Support resources and/or assistance.",
+                "value": {
+                  "text": "Support resources and/or assistance.",
+                  "payload": {
+                    "action": "triggerFlow",
+                    "value": "12-Subcat_Support_Resources"
+                  }
+                }
+              },
+              {
+                "type": "messageBack",
+                "title": "Other topics.",
+                "text": "Other topics.",
+                "displayText": "Other topics.",
+                "value": {
+                  "text": "Other topics.",
+                  "payload": {
+                    "action": "triggerFlow",
+                    "value": "11-Other_Topics"
+                  }
+                }
+              },
+              {
+                "type": "messageBack",
+                "title": "Done for today.",
+                "text": "Done for today.",
+                "displayText": "Done for today.",
+                "value": {
+                  "text": "Done for today.",
+                  "payload": {
+                    "action": "triggerFlow",
+                    "value": "13-Offboarding"
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "9ed72090-58cf-4b9a-9348-ed99dd5ea7a1",
+    "flowName": "07-Is_Mounjaro_Supply_Available",
+    "conversationType": "Medical",
+    "intentName": "",
+    "score": 0,
+    "entities": "",
+    "nodes": [
+      {
+        "nodeId": "33cc455f-10b3-42fc-b910-8f0443210c60",
+        "parentIds": [
+          "ROOT"
+        ],
+        "condition": "",
+        "responses": [
+          {
+            "type": "text",
+            "text": "Mounjaro is a prescription medicine available at pharmacies."
+          },
+          {
+            "type": "text",
+            "text": "We understand this may lead to frustration or uncertainty for people who experience delays in filling their prescription.\n\nVisit [supply.lilly.com](https://supply.lilly.com/) for the latest information on availability of your Type 2 Diabetes medicine.\n\nPlease visit [Mounjaro.com](https://mounjaro.lilly.com/) or see the copy of the Mounjaro (tirzepatide) injection Prescribing Information including Warnings and Medication Guide that are included in the box with your pen."
+          },
+          {
+            "type": "event",
+            "name": "enableFeedbackPrompt",
+            "value": {
+              "ResponseTagId": "07-Is_Mounjaro_Supply_Available"
+            }
+          },
+          {
+            "type": "suggestedActions",
+            "text": "What else can I help you with?",
+            "suggestedActions": [
+              {
+                "type": "messageBack",
+                "title": "Savings.",
+                "text": "Savings.",
+                "displayText": "Savings.",
+                "value": {
+                  "text": "Savings.",
+                  "payload": {
+                    "action": "triggerFlow",
+                    "value": "06-Savings_Coverage_Full_Tree"
+                  }
+                }
+              },
+              {
+                "type": "messageBack",
+                "title": "How to use Mounjaro.",
+                "text": "How to use Mounjaro.",
+                "displayText": "How to use Mounjaro.",
+                "value": {
+                  "text": "How to use Mounjaro.",
+                  "payload": {
+                    "action": "triggerFlow",
+                    "value": "08-How_To_Use_Mounjaro"
+                  }
+                }
+              },
+              {
+                "type": "messageBack",
+                "title": "Support resources and/or assistance.",
+                "text": "Support resources and/or assistance.",
+                "displayText": "Support resources and/or assistance.",
+                "value": {
+                  "text": "Support resources and/or assistance.",
+                  "payload": {
+                    "action": "triggerFlow",
+                    "value": "12-Subcat_Support_Resources"
+                  }
+                }
+              },
+              {
+                "type": "messageBack",
+                "title": "Other topics.",
+                "text": "Other topics.",
+                "displayText": "Other topics.",
+                "value": {
+                  "text": "Other topics.",
+                  "payload": {
+                    "action": "triggerFlow",
+                    "value": "11-Other_Topics"
+                  }
+                }
+              },
+              {
+                "type": "messageBack",
+                "title": "Done for today.",
+                "text": "Done for today.",
+                "displayText": "Done for today.",
+                "value": {
+                  "text": "Done for today.",
+                  "payload": {
+                    "action": "triggerFlow",
+                    "value": "13-Offboarding"
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "9ca968e9-bb10-42fb-a3f1-2580e5c98edc",
+    "flowName": "08-How_To_Use_Mounjaro_Subcat_Compound_Medicine",
+    "conversationType": "Medical",
+    "intentName": "",
+    "score": 0,
+    "entities": "",
+    "nodes": [
+      {
+        "nodeId": "c60f6b03-5999-4d05-ae78-5aaddc2d9cb9",
+        "parentIds": ["ROOT"],
+        "condition": "",
+        "responses": [
+          {
+            "type": "text",
+            "text": "[Press here to learn how to identify counterfeit/compounded tirzepatide](https://www.lilly.com/safety/real-medicine) and its potential risks."
+          },
+          {
+            "type": "event",
+            "name": "enableFeedbackPrompt",
+            "value": {
+              "ResponseTagId": "08-How_To_Use_Mounjaro_Subcat_Compound_Medicine"
+            }
+          },
+          {
+            "type": "jumpFlow",
+            "collection": "opentext",
+            "flowId": "4d5dde8c-f707-48d8-9112-1b4cbcd3e2cc",
+            "flowName": "08-How_To_Use_Mounjaro",
+            "nodeId": "575b2ec9-6c40-4b02-b182-5ab4e0b6fd1e",
+            "responsesStartIndex": "0"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "cfa8b122-dd38-48ee-8cb4-7a46893e19a5",
+    "flowName": "08-How_To_Use_Mounjaro_Subcat_Disposal",
+    "conversationType": "Medical",
+    "intentName": "",
+    "score": 0,
+    "entities": "",
+    "nodes": [
+      {
+        "nodeId": "9e857981-fd7c-475f-baa0-b4fd358286de",
+        "parentIds": [
+          "ROOT"
+        ],
+        "condition": "",
+        "responses": [
+          {
+            "type": "text",
+            "text": "It is important to dispose of your pens safely. To do this, put your pen in an FDA-cleared sharps container right away after use."
+          },
+          {
+            "type": "text",
+            "text": "*Do not* throw away pens in household trash. If you do not have an FDA-cleared sharps container, use a household container with heavy plastic and a puncture-resistance lid, labeled to warn of hazardous waste."
+          },
+          {
+            "type": "text",
+            "text": "Keep the container out of the reach of children. *Do not* recycle your sharps container, follow community guidelines to dispose of your container."
+          },
+          {
+            "type": "event",
+            "name": "enableFeedbackPrompt",
+            "value": {
+              "ResponseTagId": "08-How_To_Use_Mounjaro_Subcat_Disposal"
+            }
+          },
+          {
+            "type": "jumpFlow",
+            "collection": "opentext",
+            "flowId": "4d5dde8c-f707-48d8-9112-1b4cbcd3e2cc",
+            "flowName": "08-How_To_Use_Mounjaro",
+            "nodeId": "575b2ec9-6c40-4b02-b182-5ab4e0b6fd1e",
+            "responsesStartIndex": "0"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "08fd219e-48c4-41fb-bfd3-22d9fca9b060",
+    "flowName": "08-How_To_Use_Mounjaro_Subcat_Missed_Dose",
+    "conversationType": "Medical",
+    "intentName": "",
+    "score": 0,
+    "entities": "",
+    "nodes": [
+      {
+        "nodeId": "4aa1a9be-913b-4593-9567-1dcff68b3d0b",
+        "parentIds": [
+          "ROOT"
+        ],
+        "condition": "",
+        "responses": [
+          {
+            "type": "text",
+            "text": "Life happens and schedules can change. If you want to switch the day you take your weekly dose of Mounjaro, just make sure the time between the 2 doses is at least 3 days (72 hours).\n\nIf you miss a dose, take it as soon as possible - within 4 days (96 hours) after the missed dose. If more than 4 days have passed, skip the missed dose and take your next dose on your regularly scheduled day. Do not take 2 doses of Mounjaro within 3 days of each other."
+          },
+          {
+            "type": "text",
+            "text": "For more information about finding the dose that is right for you, [press here.](https://www.mounjaro.com/how-to-use-mounjaro#dosing)"
+          },
+          {
+            "type": "event",
+            "name": "enableFeedbackPrompt",
+            "value": {
+              "ResponseTagId": "08-How_To_Use_Mounjaro_Subcat_Missed_Dose"
+            }
+          },
+          {
+            "type": "jumpFlow",
+            "collection": "opentext",
+            "flowId": "4d5dde8c-f707-48d8-9112-1b4cbcd3e2cc",
+            "flowName": "08-How_To_Use_Mounjaro",
+            "nodeId": "575b2ec9-6c40-4b02-b182-5ab4e0b6fd1e",
+            "responsesStartIndex": "0"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "7cc928e0-34ef-4e30-be44-4877c3afa4fb",
+    "flowName": "08-How_To_Use_Mounjaro_Subcat_Storage",
+    "conversationType": "Medical",
+    "intentName": "",
+    "score": 0,
+    "entities": "",
+    "nodes": [
+      {
+        "nodeId": "6572b0bb-143c-40f5-a317-0eb35f7adde7",
+        "parentIds": [
+          "ROOT"
+        ],
+        "condition": "",
+        "responses": [
+          {
+            "type": "text",
+            "text": "Store your Mounjaro pens in the refrigerator:\n - make sure the temperature is between 36°F to 46°F (2°C to 8°C)\n - Store your Pen in the original carton to protect your pen from light.\n - Do not freeze the Mounjaro pens. If the pen has been frozen, throw the pen away and use a new pen.\n - The pen has glass parts. Handle it carefully. If you drop the pen on hard surface, do not use it. Use a new pen for your injection"
+          },
+          {
+            "type": "text",
+            "text": "You may store your pen at room temperature up to 86°F (30°C) for up to 21 days.\nStore your pen in the original carton to protect your pen from light.\n\n Keep your Mounjaro pen and all medicines out of the reach of children."
+          },
+          {
+            "type": "event",
+            "name": "enableFeedbackPrompt",
+            "value": {
+              "ResponseTagId": "08-How_To_Use_Mounjaro_Subcat_Storage"
+            }
+          },
+          {
+            "type": "jumpFlow",
+            "collection": "opentext",
+            "flowId": "4d5dde8c-f707-48d8-9112-1b4cbcd3e2cc",
+            "flowName": "08-How_To_Use_Mounjaro",
+            "nodeId": "575b2ec9-6c40-4b02-b182-5ab4e0b6fd1e",
+            "responsesStartIndex": "0"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "4d5dde8c-f707-48d8-9112-1b4cbcd3e2cc",
+    "flowName": "08-How_To_Use_Mounjaro",
+    "conversationType": "Medical",
+    "intentName": "",
+    "score": 0,
+    "entities": "",
+    "nodes": [
+      {
+        "nodeId": "f42ae631-0edb-4171-bd05-9b41c6129488",
+        "parentIds": [
+          "ROOT"
+        ],
+        "condition": "",
+        "responses": [
+          {
+            "type": "text",
+            "text": "*Mounjaro is taken once weekly.*\n\n*Pick your day.*\n\nUse Mounjaro 1 time each week, at any time of the day.\nBut we know schedules can change. If you want to change the day of the week you take your dose, make sure there are at least 3 days (72 hours) between doses.\n\nIt may be helpful to set a reminder in your phone so you don't forget which day is your Mounjaro day. If you set a reminder and decide to change your day, then don't forget to update your reminder to your new day."
+          },
+          {
+            "type": "text",
+            "text": "*Mounjaro comes in a single-dose pen that requires no mixing*.\nThere is no need to see or handle the needle.†\n\n †Read the [Instructions for Use](https://uspl.lilly.com/mounjaro/mounjaro.html#ug0) included with your pen."
+          },
+          {
+            "type": "text",
+            "text": "*See how to use Mounjaro*\nGet all of the details in our video below or in the [Instructions for Use](https://uspl.lilly.com/mounjaro/mounjaro.html#ug0).\n\n [https://youtu.be/BphNsbNAceM](https://youtu.be/BphNsbNAceM)"
+          },
+          {
+            "type": "suggestedActions",
+            "text": "",
+            "suggestedActions": [
+              {
+                "type": "imBack",
+                "title": "Troubleshooting common questions with your pen",
+                "value": "Troubleshooting common questions with your pen"
+              },
+              {
+                "type": "imBack",
+                "title": "Additional assistance with taking your medicine",
+                "value": "Additional assistance with taking your medicine"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nodeId": "c24a6556-2d22-4f4b-b28e-161891aabdcb",
+        "parentIds": [
+          "f42ae631-0edb-4171-bd05-9b41c6129488"
+        ],
+        "condition": "Troubleshooting common questions with your pen",
+        "responses":[
+          {
+            "type": "suggestedActions",
+            "text": "",
+            "suggestedActions": [
+              {
+                "type": "imBack",
+                "title": "How should I inspect my pen.",
+                "value": "How should I inspect my pen."
+              },
+              {
+                "type": "imBack",
+                "title": "How do I remove the gray base cap.",
+                "value": "How do I remove the gray base cap."
+              },
+              {
+                "type": "imBack",
+                "title": "Where do I place my pen to inject.",
+                "value": "Where do I place my pen to inject."
+              },
+              {
+                "type": "imBack",
+                "title": "How do I unlock my pen.",
+                "value": "How do I unlock my pen."
+              },
+              {
+                "type": "imBack",
+                "title": "How do I inject my medication.",
+                "value": "How do I inject my medication."
+              },
+              {
+                "type": "imBack",
+                "title": "Did I get my medication.",
+                "value": "Did I get my medication."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nodeId": "9d7d962d-f438-4a0b-8cd9-e9bab2e07720",
+        "parentIds": ["f42ae631-0edb-4171-bd05-9b41c6129488"],
+        "condition": "How should I inspect my pen.",
+        "responses": [
+          {
+            "type": "text",
+            "text": "- Check the pen label to ensure that you have the right medication and dose, and the pen is not expired.\n - Inspect the Pen to make sure that it is not damaged.\n - Check the medicine to make sure it is not cloudy, does not have particles and is colorless to slightly yellow.\n - You may see air bubbles in your pen. They are normal and will not affect your dose.\n - Make sure your medicine is not frozen.\n - Do not freeze your pen. If the pen has been frozen, throw the pen away and use a new pen.\n - Discard pen in an FDA-cleared sharps container."
+          },
+          {
+            "type": "text",
+            "text": "![Inspect-your-pen.png](@{image:Inspect-your-pen.png})"
+          },
+          {
+            "type": "text",
+            "text": "Read the full [Instructions for Use](https://uspl.lilly.com/mounjaro/mounjaro.html#ug0) included with your pen."
+          },
+          {
+            "type": "jumpFlow",
+            "collection": "opentext",
+            "flowId": "4d5dde8c-f707-48d8-9112-1b4cbcd3e2cc",
+            "flowName": "08-How_To_Use_Mounjaro",
+            "nodeId": "575b2ec9-6c40-4b02-b182-5ab4e0b6fd1e",
+            "responsesStartIndex": "0"
+          }
+        ]
+      },
+      {
+        "nodeId": "6ce7d973-2316-4803-8687-bd61ae66a056",
+        "parentIds": [
+          "f42ae631-0edb-4171-bd05-9b41c6129488"
+        ],
+        "condition": "How do I remove the gray base cap.",
+        "responses": [
+          {
+            "type": "text",
+            "text": "- *Do not* unlock the pen until you place the clear base on your skin and are ready to inject.\n- Pull the gray base cap straight off and throw it away in your household trash.\n- Do not put the gray base cap back on as this could damage the needle."
+          },
+          {
+            "type": "text",
+            "text": "![Remove-the-base-cap.png](@{image:Remove-the-base-cap.png})"
+          },
+          {
+            "type": "text",
+            "text": "Read the full I[nstructions for Use](https://uspl.lilly.com/mounjaro/mounjaro.html#ug0) included with your pen."
+          },
+          {
+            "type": "jumpFlow",
+            "collection": "opentext",
+            "flowId": "4d5dde8c-f707-48d8-9112-1b4cbcd3e2cc",
+            "flowName": "08-How_To_Use_Mounjaro",
+            "nodeId": "575b2ec9-6c40-4b02-b182-5ab4e0b6fd1e",
+            "responsesStartIndex": "0"
+          }
+        ]
+      },
+      {
+        "nodeId": "0959e59b-22b5-4439-9188-99dbc3cc2ca5",
+        "parentIds": [
+          "f42ae631-0edb-4171-bd05-9b41c6129488"
+        ],
+        "condition": "Where do I place my pen to inject.",
+        "responses": [
+          {
+            "type": "text",
+            "text": "- Your healthcare provider can help you choose the injection site that is best for you.\n - You or another person can inject the medicine in your stomach or thigh. Another person should give you the injection in the back of your upper arm.\n- Change (rotate) your injection site each week. You may use the same area of your body but be sure to choose a different injection site in that area.\n - Pull off the gray base cap prior to placing the clear base flat against your skin at the injection site, then unlock."
+          },
+          {
+            "type": "text",
+            "text": "![Health-Care-Provider.png](@{image:Health-Care-Provider.png})"
+          },
+          {
+            "type": "jumpFlow",
+            "collection": "opentext",
+            "flowId": "4d5dde8c-f707-48d8-9112-1b4cbcd3e2cc",
+            "flowName": "08-How_To_Use_Mounjaro",
+            "nodeId": "575b2ec9-6c40-4b02-b182-5ab4e0b6fd1e",
+            "responsesStartIndex": "0"
+          }
+        ]
+      },
+      {
+        "nodeId": "68172190-c419-4d98-aa6c-99c7b59c9a94",
+        "parentIds": [
+          "f42ae631-0edb-4171-bd05-9b41c6129488"
+        ],
+        "condition": "How do I unlock my pen.",
+        "responses": [
+          {
+            "type": "text",
+            "text": "- Unlock your pen by turning the lock ring."
+          },
+          {
+            "type": "text",
+            "text": "![Unlock-By-Turning-The-Lock-Ring.png](@{image:Unlock-By-Turning-The-Lock-Ring.png})"
+          },
+          {
+            "type": "text",
+            "text": "Read the full [Instructions for Use](https://uspl.lilly.com/mounjaro/mounjaro.html#ug0) included with your pen."
+          },
+          {
+            "type": "jumpFlow",
+            "collection": "opentext",
+            "flowId": "4d5dde8c-f707-48d8-9112-1b4cbcd3e2cc",
+            "flowName": "08-How_To_Use_Mounjaro",
+            "nodeId": "575b2ec9-6c40-4b02-b182-5ab4e0b6fd1e",
+            "responsesStartIndex": "0"
+          }
+        ]
+      },
+      {
+        "nodeId": "86996d1d-01a9-453e-920e-53dc93a2453f",
+        "parentIds": [
+          "f42ae631-0edb-4171-bd05-9b41c6129488"
+        ],
+        "condition": "How do I inject my medication.",
+        "responses": [
+          {
+            "type": "text",
+            "text": "- Press and hold the purple injection button for up to 10 seconds.\n- Listen for the first click. It means the injection has started. When you hear the second click, the injection is complete.\n-The whole process may take up to 10 seconds."
+          },
+          {
+            "type": "text",
+            "text": "![Injection-Started.png](@{image:Injection-Started.png})"
+          },
+          {
+            "type": "text",
+            "text": "- You will know your injection is complete when the gray plunger is visible.\n- Some people may hear a soft click right before the second loud click. That is the normal operation of the Pen. Do not remove the pen from your skin until you hear the second loud click.\n\nRead the full [Instructions for Use](https://uspl.lilly.com/mounjaro/mounjaro.html#ug0) included with your pen."
+          },
+          {
+            "type": "jumpFlow",
+            "collection": "opentext",
+            "flowId": "4d5dde8c-f707-48d8-9112-1b4cbcd3e2cc",
+            "flowName": "08-How_To_Use_Mounjaro",
+            "nodeId": "575b2ec9-6c40-4b02-b182-5ab4e0b6fd1e",
+            "responsesStartIndex": "0"
+          }
+        ]
+      },
+      {
+        "nodeId": "8ae979b1-b0d6-4845-b19f-f6bcf1346832",
+        "parentIds": [
+          "f42ae631-0edb-4171-bd05-9b41c6129488"
+        ],
+        "condition": "Did I get my medication.",
+        "responses": [
+          {
+            "type": "text",
+            "text": "- Press and hold the purple injection button for up to 10 seconds.\n- Listen for:\n - First click = injection started\n - Second click = injection completed\n- You will know your injection is complete when the gray plunger is visible."
+          },
+          {
+            "type": "text",
+            "text": "![Injection-button.png](@{image:Injection-button.png})"
+          },
+          {
+            "type": "text",
+            "text": "*- If you're uncertain whether the pen worked the right way, check to see if you have recieved your dose. Your dose was delivered the right way if the gray plunger is visible"
+          },
+          {
+            "type": "jumpFlow",
+            "collection": "opentext",
+            "flowId": "4d5dde8c-f707-48d8-9112-1b4cbcd3e2cc",
+            "flowName": "08-How_To_Use_Mounjaro",
+            "nodeId": "575b2ec9-6c40-4b02-b182-5ab4e0b6fd1e",
+            "responsesStartIndex": "0"
+          }
+        ]
+      },
+      {
+        "nodeId": "575b2ec9-6c40-4b02-b182-5ab4e0b6fd1e",
+        "parentIds": [
+          "9d7d962d-f438-4a0b-8cd9-e9bab2e07720",
+          "6ce7d973-2316-4803-8687-bd61ae66a056",
+          "0959e59b-22b5-4439-9188-99dbc3cc2ca5",
+          "68172190-c419-4d98-aa6c-99c7b59c9a94",
+          "86996d1d-01a9-453e-920e-53dc93a2453f",
+          "8ae979b1-b0d6-4845-b19f-f6bcf1346832"
+        ],
+        "condition": "",
+        "responses": [
+          {
+            "type": "suggestedActions",
+            "text": "Is there anything else I can help you with?",
+            "suggestedActions": [
+              {
+                "type": "imBack",
+                "title": "Troubleshooting common questions with your pen.",
+                "value": "Troubleshooting common questions with your pen."
+              },
+              {
+                "type": "imBack",
+                "title": "Report a problem with your pen",
+                "value": "Report a problem with your pen"
+              },
+              {
+                "type": "messageBack",
+                "title": "Support resources and/or assistance.",
+                "text": "Support resources and/or assistance.",
+                "displayText": "Support resources and/or assistance.",
+                "value": {
+                  "text": "Support resources and/or assistance.",
+                  "payload": {
+                    "action": "triggerFlow",
+                    "value": "12-Subcat_Support_Resources"
+                  }
+                }
+              },
+              {
+                "type": "messageBack",
+                "title": "Other topics.",
+                "text": "Other topics.",
+                "displayText": "Other topics.",
+                "value": {
+                  "text": "Other topics.",
+                  "payload": {
+                    "action": "triggerFlow",
+                    "value": "11-Other_Topics"
+                  }
+                }
+              },
+              {
+                "type": "messageBack",
+                "title": "Done for today.",
+                "text": "Done for today.",
+                "displayText": "Done for today.",
+                "value": {
+                  "text": "Done for today.",
+                  "payload": {
+                    "action": "triggerFlow",
+                    "value": "13-Offboarding"
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nodeId": "6dabbe5e-2a27-41e5-87c5-ffd432ff9960",
+        "parentIds": [
+          "575b2ec9-6c40-4b02-b182-5ab4e0b6fd1e"
+        ],
+        "condition": "Troubleshooting common questions with your pen.",
+        "responses": [
+          {
+            "type": "jumpFlow",
+            "collection": "opentext",
+            "flowId": "4d5dde8c-f707-48d8-9112-1b4cbcd3e2cc",
+            "flowName": "08-How_To_Use_Mounjaro",
+            "nodeId": "c24a6556-2d22-4f4b-b28e-161891aabdcb",
+            "responsesStartIndex": "0"
+          }
+        ]
+      },
+      {
+        "nodeId": "8d527874-5565-4c16-a2a2-1decd462b7a3",
+        "parentIds": ["575b2ec9-6c40-4b02-b182-5ab4e0b6fd1e"],
+        "condition": "Report a problem with your pen.",
+        "responses": [
+          {
+            "type": "text",
+            "text": "For reporting a problem with your pen, it's best if a live agent helps you."
+          },
+          {
+            "type": "text",
+            "text": "To speak to a live agent, please contact the Lilly Answers Center (TLAC) during business hours at 1-800-LillyRx (1-800-545-5979.)"
+          },
+          {
+            "type": "text",
+            "text": "The business hours are 9am to 5pm ET from Monday-Friday. Please note that agents will not be able to provide support for cost or savings inquiries."
+          },
+          {
+            "type": "jumpFlow",
+            "collection": "opentext",
+            "flowId": "4d5dde8c-f707-48d8-9112-1b4cbcd3e2cc",
+            "flowName": "08-How_To_Use_Mounjaro",
+            "nodeId": "575b2ec9-6c40-4b02-b182-5ab4e0b6fd1e",
+            "responsesStartIndex": "0"
+          }
+        ]
+      },
+      {
+          "nodeId": "a7491a57-ff21-43c1-9af7-80a4324d4bd1",
+              "parentIds": [
+                "f42ae631-0edb-4171-bd05-9b41c6129488"
+              ],
+              "condition": "Additional assistance with taking your medicine",
+              "responses": [
+                {
+                  "type": "suggestedActions",
+                  "text": "Would you like to be connected with an agent for assistance?",
+                  "suggestedActions": [
+                    {
+                      "type": "messageBack",
+                      "title": "Yes",
+                      "text": "Yes",
+                      "displayText": "Yes",
+                      "value": {
+                        "text": "Yes",
+                        "payload": {
+                          "action": "triggerFlow",
+                          "value": ""
+                        }
+                      }
+                    },
+                    {
+                      "type": "messageBack",
+                      "title": "No",
+                      "text": "No",
+                      "displayText": "No",
+                      "value": {
+                        "text": "No",
+                        "payload": {
+                          "action": "triggerFlow",
+                          "value": ""
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+        },
+        {
+          "nodeId": "78a4fbb4-80a0-4992-b469-e2d9c36b75f5",
+              "parentIds": [
+                "a7491a57-ff21-43c1-9af7-80a4324d4bd1"
+              ],
+              "condition": "Yes",
+              "responses": [
+                {
+                  "type": "executeModule",
+                  "moduleName": "gccModuleDialog"
+                }
+              ]
+        },
+        {
+          "nodeId": "ea9cd365-0a3b-4acc-ae69-b18d483b749b",
+              "parentIds": [
+                "a7491a57-ff21-43c1-9af7-80a4324d4bd1"
+              ],
+              "condition": "No",
+              "responses": [
+                {
+                  "type": "jumpFlow",
+                  "collection": "opentext",
+                  "flowId": "4d5dde8c-f707-48d8-9112-1b4cbcd3e2cc",
+                  "flowName": "08-How_To_Use_Mounjaro",
+                  "nodeId": "0959e59b-22b5-4439-9188-99dbc3cc2ca5",
+                  "responsesStartIndex": "0"
+                }
+              ]
+        }
+    ]
+  },
+  {
+    "_id": "ca17e2bd-b338-4571-ba64-ac7384b60de7",
+    "flowName": "09-Subcat_Hear_Patient_Stories",
+    "conversationType": "Medical",
+    "intentName": "",
+    "score": 0,
+    "entities": "",
+    "nodes": [
+      {
+        "nodeId": "50aa2427-7105-47d0-8e85-d39e1c320635",
+        "parentIds": [
+          "ROOT"
+        ],
+        "condition": "",
+        "responses": [
+          {
+            "type": "text",
+            "text": "[Press here](https://mounjaro.lilly.com/what-is-mounjaro/patient-stories) to hear stories from other patients"
+          },
+          {
+            "type": "suggestedActions",
+            "text": "What else can I help you with?",
+            "suggestedActions": [
+              {
+                "type": "messageBack",
+                "title": "How Mounjaro works.",
+                "text": "How Mounjaro works.",
+                "displayText": "How Mounjaro works.",
+                "value": {
+                  "text": "How Mounjaro works.",
+                  "payload": {
+                    "action": "triggerFlow",
+                    "value": "05-How_Mounjaro_Works"
+                  }
+                }
+              },
+              {
+                "type": "messageBack",
+                "title": "How to talk with my doctor about Mounjaro.",
+                "text": "How to talk with my doctor about Mounjaro.",
+                "displayText": "How to talk with my doctor about Mounjaro.",
+                "value": {
+                  "text": "How to talk with my doctor about Mounjaro.",
+                  "payload": {
+                    "action": "triggerFlow",
+                    "value": "03-Talking_With_My_Doctor"
+                  }
+                }
+              },
+              {
+                "type": "messageBack",
+                "title": "How to talk with my doctor about Mounjaro.",
+                "text": "How to talk with my doctor about Mounjaro.",
+                "displayText": "How to talk with my doctor about Mounjaro.",
+                "value": {
+                  "text": "How to talk with my doctor about Mounjaro.",
+                  "payload": {
+                    "action": "triggerFlow",
+                    "value": "12-Subcat_Support_Resources"
+                  }
+                }
+              },
+              {
+                "type": "messageBack",
+                "title": "Other topics.",
+                "text": "Other topics.",
+                "displayText": "Other topics.",
+                "value": {
+                  "text": "Other topics.",
+                  "payload": {
+                    "action": "triggerFlow",
+                    "value": "11-Other_Topics"
+                  }
+                }
+              },
+              {
+                "type": "messageBack",
+                "title": "Done for today.",
+                "text": "Done for today.",
+                "displayText": "Done for today.",
+                "value": {
+                  "text": "Done for today.",
+                  "payload": {
+                    "action": "triggerFlow",
+                    "value": "13-Offboarding"
+                  }
+                }
+              },
+              {
+                "type": "messageBack",
+                "title": "Potential side effects",
+                "text": "Potential side effects",
+                "displayText": "Potential side effects",
+                "value": {
+                  "text": "Potential side effects",
+                  "payload": {
+                    "action": "triggerFlow",
+                    "value": "10-Side_Effects"
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "a59267cc-26a5-4419-a503-71109f2845f9",
+    "flowName": "09-Subcat_MJO_A1C_Results",
+    "conversationType": "Medical",
+    "intentName": "",
+    "score": 0,
+    "entities": "",
+    "nodes": [
+      {
+        "nodeId": "0ffe04a1-2837-48de-8440-f50c078d1a18",
+        "parentIds": [
+          "ROOT"
+        ],
+        "condition": "",
+        "responses": [
+          {
+            "type": "text",
+            "text": "*Mounjaro vs. Ozempic*"
+          },
+          {
+            "type": "text",
+            "text": "![Mounjaro-vs-Ozempic.png](@{image:Mounjaro-vs-Ozempic.png})"
+          },
+          {
+            "type": "text",
+            "text": "In a 40-week study, the Mounjaro 5-mg, 10-mg, and 15-mg doses were compared to Ozempic 1 mg in 1879 adults with type 2 diabetes who were also taking metformin and had a starting A1C of 8.3%. For people taking Mounjaro, their A1C was lowered on average by 2.0% on the 5-mg dose, 2.2% on the 10-mg dose, and 2.3% on the 15-mg dose. For people taking the Ozempic 1-mg dose, their A1C was lowered on average by 1.9%."
+          },
+          {
+            "type": "text",
+            "text": "*Mounjaro vs. Tresiba*"
+          },
+          {
+            "type": "text",
+            "text": "![Mounjaro-vs-Tresiba.png](@{image:Mounjaro-vs-Tresiba.png})"
+          },
+          {
+            "type": "text",
+            "text": "In a 52-week study, the Mounjaro 5-mg, 10-mg, and 15-mg doses were compared to titrated Tresiba, a basal insulin, in 1444 adults with type 2 diabetes who were also taking metformin with or without another oral diabetes medication. They had an average starting A1C of 8.1 to 8.2%. At the end of the study, 26% of people on Tresiba met the blood sugar goal (or target). The average daily dose of Tresiba was 49 units per day by the end of the study. For people taking Mounjaro, their A1C was lowered by 1.9% on the 5-mg dose, 2.0% on the 10-mg dose, and 2.1% on the 15-mg dose. For people taking Tresiba, their A1C was lowered by 1.3%."
+          },
+          {
+            "type": "text",
+            "text": "*Mounjaro vs. Placebo*"
+          },
+          {
+            "type": "text",
+            "text": "![Mounjaro-vs-Placebo.png](@{image:Mounjaro-vs-Placebo.png})"
+          },
+          {
+            "type": "text",
+            "text": "In a 40-week study, the Mounjaro 5-mg, 10-mg, and 15-mg doses were compared to placebo in 475 adults with type 2 diabetes who were also taking glargine. Some study participants were also taking metformin. They had a starting A1C of 8.2% to 8.4%. For people taking Mounjaro and insulin glargine, their A1C was lowered by 2.1% on the 5-mg dose, 2.4% on the 10-mg dose, and 2.3% on the 15-mg dose. For people taking placebo and insulin glargine, their A1C was lowered by 0.9%."
+          },
+          {
+            "type": "text",
+            "text": "Select Safety Information\n*Low blood sugar (hypoglycemia).* Your risk for getting low blood sugar may be higher if you use Mounjaro with another medicine that can cause low blood sugar, such as sulfonylurea or insulin.\n*Signs and symptoms of low blood sugar may include* dizziness or light-headedness, sweating, confusion or drowsiness, headache, blurred vision, slurred speech, shakiness, fast heartbeat, anxiety, irritability, or mood changes, hunger, weakness, and feeling jittery."
+          },
+          {
+            "type": "event",
+            "name": "enableFeedbackPrompt",
+            "value": {
+              "ResponseTagId": "09-Subcat_MJO_A1C_Results"
+            }
+          },
+          {
+            "type": "suggestedActions",
+            "text": "What else can I help you with?",
+            "suggestedActions": [
+              {
+                "type": "messageBack",
+                "title": "How Mounjaro works.",
+                "text": "How Mounjaro works.",
+                "displayText": "How Mounjaro works.",
+                "value": {
+                  "text": "How Mounjaro works.",
+                  "payload": {
+                    "action": "triggerFlow",
+                    "value": "05-How_Mounjaro_Works"
+                  }
+                }
+              },
+              {
+                "type": "messageBack",
+                "title": "How to talk with my doctor about Mounjaro.",
+                "text": "How to talk with my doctor about Mounjaro.",
+                "displayText": "How to talk with my doctor about Mounjaro.",
+                "value": {
+                  "text": "How to talk with my doctor about Mounjaro.",
+                  "payload": {
+                    "action": "triggerFlow",
+                    "value": "03-Talking_With_My_Doctor"
+                  }
+                }
+              },
+              {
+                "type": "messageBack",
+                "title": "Support resources and/or assistance.",
+                "text": "Support resources and/or assistance.",
+                "displayText": "Support resources and/or assistance.",
+                "value": {
+                  "text": "Support resources and/or assistance.",
+                  "payload": {
+                    "action": "triggerFlow",
+                    "value": "12-Subcat_Support_Resources"
+                  }
+                }
+              },
+              {
+                "type": "messageBack",
+                "title": "Other topics.",
+                "text": "Other topics.",
+                "displayText": "Other topics.",
+                "value": {
+                  "text": "Other topics.",
+                  "payload": {
+                    "action": "triggerFlow",
+                    "value": "11-Other_Topics"
+                  }
+                }
+              },
+              {
+                "type": "messageBack",
+                "title": "Done for today.",
+                "text": "Done for today.",
+                "displayText": "Done for today.",
+                "value": {
+                  "text": "Done for today.",
+                  "payload": {
+                    "action": "triggerFlow",
+                    "value": "13-Offboarding"
+                  }
+                }
+              },
+              {
+                "type": "messageBack",
+                "title": "Potential side effects",
+                "text": "Potential side effects",
+                "displayText": "Potential side effects",
+                "value": {
+                  "text": "Potential side effects",
+                  "payload": {
+                    "action": "triggerFlow",
+                    "value": "10-Side_Effects"
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "79510780-6ada-493b-9a5a-9019ef7390b3",
+    "flowName": "10-Subcat_Report_Side_Effect",
+    "conversationType": "Medical",
+    "intentName": "",
+    "score": 0,
+    "entities": "",
+    "nodes": [
+      {
+        "nodeId": "db037adc-43a6-4802-99d9-c2e1ae19224b",
+        "parentIds": [
+          "ROOT"
+        ],
+        "condition": "",
+        "responses": [
+          {
+            "type": "text",
+            "text": "For reporting a side effect, it's best if a live agent helps you."
+          },
+          {
+            "type": "text",
+            "text": "To speak to a live agent, please contact the Lilly Answers Center (TLAC) during business hours at 1-800-LillyRx (1-800-545-5979.)"
+          },
+          {
+            "type": "text",
+            "text": "The business hours are 9am to 5pm ET from Monday-Friday. Please note that agents will not be able to provide support for cost or savings inquiries."
+          },
+          {
+            "type": "jumpFlow",
+            "collection": "opentext",
+            "flowId": "e64a28a5-17a6-4203-8e4f-bc1e513e6baa",
+            "flowName": "10-Side_Effects",
+            "nodeId": "d695e6be-f812-4fc8-82e2-6fd6db7cb2b0",
+            "responsesStartIndex": "0"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "93d31814-828c-42d0-9ed6-6676ed8249dd",
+    "flowName": "10-Side_Effects_Subcat_Managing_Nausea",
+    "conversationType": "Medical",
+    "intentName": "",
+    "score": 0,
+    "entities": "",
+    "nodes": [
+      {
+        "nodeId": "09e2d33a-e28b-489b-a41a-857d0e49c569",
+        "parentIds": [
+          "ROOT"
+        ],
+        "condition": "",
+        "responses": [
+          {
+            "type": "text",
+            "text": "If you experience nausea, talk to your doctor. In the meantime, some people find the following tips may help:\n - Eat *smaller meals* -- try splitting 3 daily meals into 4 or more smaller ones\n - *Stop eating* when you feel full\n - *Avoid* fat or fatty foods\n - Try eating *bland foods* like toast, crackers, or rice"
+          },
+          {
+            "type": "text",
+            "text": "Talk to your doctor if you have any side effects that bother you or don't go away"
+          },
+          {
+            "type": "event",
+            "name": "enableFeedbackPrompt",
+            "value": {
+              "ResponseTagId": "10-Side_Effects_Subcat_Managing_Nausea"
+            }
+          },
+          {
+            "type": "jumpFlow",
+            "collection": "opentext",
+            "flowId": "e64a28a5-17a6-4203-8e4f-bc1e513e6baa",
+            "flowName": "10-Side_Effects",
+            "nodeId": "d695e6be-f812-4fc8-82e2-6fd6db7cb2b0",
+            "responsesStartIndex": "0"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "e64a28a5-17a6-4203-8e4f-bc1e513e6baa",
+    "flowName": "10-Side_Effects",
+    "conversationType": "Medical",
+    "intentName": "",
+    "score": 0,
+    "entities": "",
+    "nodes": [
+      {
+        "nodeId": "af618145-8b1a-4af0-ae8d-58b107702f00",
+        "parentIds": [
+          "ROOT"
+        ],
+        "condition": "",
+        "responses": [
+          {
+            "type": "text",
+            "text": "Talk to your doctor if you have any side effects that bother you or don't go away.\n\n Everyone can have a different experience, but here are the most common side effects experienced by patients taking Mounjaro:\n\n - Nausea\n\n - Diarrhea\n\n - Decreased appetite\n\n - Vomiting\n\n - Constipation\n\n - Indigestion\n\n - Stomach Pain\n\nIn studies, most nausea, vomiting and diarrhea events occurred while the dose of Mounjaro was being increased. These events decreased over time.\n\nIn studies, gastrointestinal (GI) side effects were more common in people taking Mounjaro than people taking placebo, and people taking Mounjaro were more likely to stop treatment because of these side effects.\n\nTalk to your healthcare provider about any side effects you experience."
+          },
+          {
+            "type": "text",
+            "text": "*Select Safety Information*\n*Kidney problems (kidney failure).* In people who have kidney problems, diarrhea, nausea, and vomiting may cause a loss of fluids (dehydration), which may cause kidney problems to get worse. It is important for you to drink fluids to help reduce your chance of dehydration.\n*Severe stomach problems.* Stomach problems, sometimes severe, have been reported with Mounjaro. Tell your healthcare provider if you have stomach problems that are severe or will not go away."
+          },
+          {
+            "type": "event",
+            "name": "enableFeedbackPrompt",
+            "value": {
+              "ResponseTagId": "10-Side_Effects"
+            }
+          },
+          {
+            "type": "suggestedActions",
+            "text": "What else can I help you with?",
+            "suggestedActions": [
+              {
+                "type": "imBack",
+                "title": "Managing mausea",
+                "value": "Managing mausea"
+              },
+              {
+                "type": "imBack",
+                "title": "Report a side effect",
+                "value": "Report a side effect"
+              },
+              {
+                "type": "messageBack",
+                "title": "Support resources and/or contact us.",
+                "text": "Support resources and/or contact us.",
+                "displayText": "Support resources and/or contact us.",
+                "value": {
+                  "text": "Support resources and/or contact us.",
+                  "payload": {
+                    "action": "triggerFlow",
+                    "value": "12-Subcat_Support_Resources"
+                  }
+                }
+              },
+              {
+                "type": "messageBack",
+                "title": "Other topics.",
+                "text": "Other topics.",
+                "displayText": "Other topics.",
+                "value": {
+                  "text": "Other topics.",
+                  "payload": {
+                    "action": "triggerFlow",
+                    "value": "11-Other_Topics"
+                  }
+                }
+              },
+              {
+                "type": "messageBack",
+                "title": "Done for today.",
+                "text": "Done for today.",
+                "displayText": "Done for today.",
+                "value": {
+                  "text": "Done for today.",
+                  "payload": {
+                    "action": "triggerFlow",
+                    "value": "13-Offboarding"
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nodeId": "09753fc9-65b0-4208-a5a9-c74d92c8377e",
+        "parentIds": [
+          "af618145-8b1a-4af0-ae8d-58b107702f00"
+        ],
+        "condition": "Managing mausea",
+        "responses": [
+          {
+            "type": "text",
+            "text": "If you experience nausea, talk to your doctor. In the meantime, some people find the following tips may help:\n\n - Eat *smaller meals* -- try splitting 3 daily meals into 4 or more smaller ones\n\n - *Stop eating* when you feel full\n\n - *Avoid* fat or fatty foods\n\n - Try eating *bland foods* like toast, crackers, or rice"
+          },
+          {
+            "type": "text",
+            "text": "Talk to your doctor if you have any side effects that bother you or don't go away"
+          },
+          {
+            "type": "event",
+            "name": "enableFeedbackPrompt",
+            "value": {
+              "ResponseTagId": "10-Side_Effects"
+            }
+          },
+          {
+            "type": "jumpFlow",
+            "collection": "opentext",
+            "flowId": "e64a28a5-17a6-4203-8e4f-bc1e513e6baa",
+            "flowName": "10-Side_Effects",
+            "nodeId": "d695e6be-f812-4fc8-82e2-6fd6db7cb2b0",
+            "responsesStartIndex": "0"
+          }
+        ]
+      },
+      {
+        "nodeId": "e7a9bd69-e56d-456c-a42e-92d072fead44",
+        "parentIds": [
+          "af618145-8b1a-4af0-ae8d-58b107702f00"
+        ],
+        "condition": "Report a side effect",
+        "responses": [
+          {
+            "type": "text",
+            "text": "For reporting a side effect, it's best if a live agent helps you."
+          },
+          {
+            "type": "text",
+            "text": "To speak to a live agent, please contact the Lilly Answers Center (TLAC) during business hours at 1-800-LillyRx (1-800-545-5979.)"
+          },
+          {
+            "type": "text",
+            "text": "The business hours are 9am to 5pm ET from Monday-Friday. Please note that agents will not be able to provide support for cost or savings inquiries."
+          },
+          {
+            "type": "jumpFlow",
+            "collection": "opentext",
+            "flowId": "e64a28a5-17a6-4203-8e4f-bc1e513e6baa",
+            "flowName": "10-Side_Effects",
+            "nodeId": "d695e6be-f812-4fc8-82e2-6fd6db7cb2b0",
+            "responsesStartIndex": "0"
+          }
+        ]
+      },
+      {
+        "nodeId": "d695e6be-f812-4fc8-82e2-6fd6db7cb2b0",
+        "parentIds": [
+          "09753fc9-65b0-4208-a5a9-c74d92c8377e",
+          "e7a9bd69-e56d-456c-a42e-92d072fead44"
+        ],
+        "condition": "",
+        "responses": [
+          {
+            "type": "suggestedActions",
+            "text": "Is there anything else I can help you with?",
+            "suggestedActions": [
+              {
+                "type": "messageBack",
+                "title": "Support resources and/or assistance.",
+                "text": "Support resources and/or assistance.",
+                "displayText": "Support resources and/or assistance.",
+                "value": {
+                  "text": "Support resources and/or assistance.",
+                  "payload": {
+                    "action": "triggerFlow",
+                    "value": "12-Subcat_Support_Resources"
+                  }
+                }
+              },
+              {
+                "type": "messageBack",
+                "title": "Other topics.",
+                "text": "Other topics.",
+                "displayText": "Other topics.",
+                "value": {
+                  "text": "Other topics.",
+                  "payload": {
+                    "action": "triggerFlow",
+                    "value": "11-Other_Topics"
+                  }
+                }
+              },
+              {
+                "type": "messageBack",
+                "title": "Done for today.",
+                "text": "Done for today.",
+                "displayText": "Done for today.",
+                "value": {
+                  "text": "Done for today.",
+                  "payload": {
+                    "action": "triggerFlow",
+                    "value": "13-Offboarding"
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
