@@ -1014,6 +1014,16 @@
             "text": "What else can I help you with today?",
             "suggestedActions": [
               {
+                "type": "imBack",
+                "title": "I have commercial insurance.",
+                "value": "I have commercial insurance."
+              },
+              {
+                "type": "imBack",
+                "title": "I do not have commercial insurance, I have another type of insurance.",
+                "value": "I do not have commercial insurance, I have another type of insurance."
+              },
+              {
                 "type": "messageBack",
                 "title": "Support resources and/or assistance.",
                 "text": "Support resources and/or assistance.",
@@ -1053,6 +1063,40 @@
                 }
               }
             ]
+          }
+        ]
+      },
+      {
+        "nodeId": "b699de6e-53f6-4733-b33b-314ffdba56e1",
+        "parentIds": [
+          "981d2436-0750-4a35-b017-95add85cd2df"
+        ],
+        "condition": "I have commercial insurance.",
+        "responses": [
+          {
+            "type": "jumpFlow",
+            "collection": "opentext",
+            "flowId": "f1b6440e-fd8c-4680-a5e1-5a1e8b1c770f",
+            "flowName": "06-Savings_Coverage_Subcat_Insurance",
+            "nodeId": "9f6b6830-74d6-48c7-b188-680fa90b5b9a",
+            "responsesStartIndex": "0"
+          }
+        ]
+      },
+      {
+        "nodeId": "9063e0ae-9e71-4c6a-b573-3c36f4daaaff",
+        "parentIds": [
+          "981d2436-0750-4a35-b017-95add85cd2df"
+        ],
+        "condition": "I do not have commercial insurance, I have another type of insurance.",
+        "responses": [
+          {
+            "type": "jumpFlow",
+            "collection": "opentext",
+            "flowId": "f1b6440e-fd8c-4680-a5e1-5a1e8b1c770f",
+            "flowName": "06-Savings_Coverage_Subcat_Insurance",
+            "nodeId": "60039243-7446-43f6-bb2c-68fd49486eda",
+            "responsesStartIndex": "0"
           }
         ]
       }
