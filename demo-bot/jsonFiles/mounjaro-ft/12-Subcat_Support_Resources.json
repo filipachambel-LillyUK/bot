@@ -1,6 +1,6 @@
 {
   "_id": "cf851ce2-937c-4730-8e9c-ea4ca39162aa",
-  "flowName": "12-Subcat_Support_Resources",
+  "flowName": "12_Subcat_Support_Resources",
   "conversationType": "Medical",
   "intentName": "intent_Mounjaro_Support_Resources",
   "score": 0.4,
@@ -41,7 +41,7 @@
                 "text": "How Mounjaro works.",
                 "payload": {
                   "action": "triggerFlow",
-                  "value": "05-How_Mounjaro_Works"
+                  "value": "05_How_Mounjaro_Works"
                 }
               }
             },
@@ -54,7 +54,7 @@
                 "text": "How to use Mounjaro.",
                 "payload": {
                   "action": "triggerFlow",
-                  "value": "08-How_To_Use_Mounjaro"
+                  "value": "08_How_To_Use_Mounjaro"
                 }
               }
             },
@@ -67,7 +67,7 @@
                 "text": "Savings.",
                 "payload": {
                   "action": "triggerFlow",
-                  "value": "06-Savings_Coverage_Full_Tree"
+                  "value": "06_Savings_Coverage_Full_Tree"
                 }
               }
             },
@@ -80,7 +80,7 @@
                 "text": "Other topics.",
                 "payload": {
                   "action": "triggerFlow",
-                  "value": "11-Other_Topics"
+                  "value": "11_Other_Topics"
                 }
               }
             },
@@ -93,7 +93,7 @@
                 "text": "Done for today",
                 "payload": {
                   "action": "triggerFlow",
-                  "value": "13-Offboarding"
+                  "value": "13_Offboarding"
                 }
               }
             }

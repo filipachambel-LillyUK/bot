@@ -1,6 +1,6 @@
 {
     "_id": "c108a6e1-00cd-44a6-8c18-e55e4fd215c2",
-    "flowName": "12-Subcat_Digital_Starter_Kit",
+    "flowName": "12_Subcat_Digital_Starter_Kit",
     "conversationType": "Medical",
     "intentName": "",
     "score": 0.4,
@@ -30,7 +30,7 @@
                             "text" : "How Mounjaro works.",
                             "payload" : {
                                 "action" : "triggerFlow",
-                                "value" : "05-How_Mounjaro_Works"
+                                "value" : "05_How_Mounjaro_Works"
                             }
                         }
                     },
@@ -43,7 +43,7 @@
                             "text" : "How to use Mounjaro.",
                             "payload" : {
                                 "action" : "triggerFlow",
-                                "value" : "08-How_To_Use_Mounjaro"
+                                "value" : "08_How_To_Use_Mounjaro"
                             }
                         }
                     },
@@ -56,7 +56,7 @@
                             "text" : "Savings.",
                             "payload" : {
                                 "action" : "triggerFlow",
-                                "value" : "06-Savings_Coverage_Full_Tree"
+                                "value" : "06_Savings_Coverage_Full_Tree"
                             }
                         }
                     },
@@ -69,7 +69,7 @@
                             "text" : "Other topics.",
                             "payload" : {
                                 "action" : "triggerFlow",
-                                "value" : "11-Other_Topics"
+                                "value" : "11_Other_Topics"
                             }
                         }
                     },
@@ -82,7 +82,7 @@
                             "text" : "Done for today",
                             "payload" : {
                                 "action" : "triggerFlow",
-                                "value" : "13-Offboarding"
+                                "value" : "13_Offboarding"
                             }
                         }
                     }

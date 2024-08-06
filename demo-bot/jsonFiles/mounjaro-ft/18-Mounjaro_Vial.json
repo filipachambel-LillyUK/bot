@@ -1,6 +1,6 @@
 {
   "_id": "59cd5622-ae45-45bb-9204-e86500125db6",
-  "flowName": "18-Vial_Response",
+  "flowName": "18_Vial_Response",
   "conversationType": "Medical",
   "intentName": "",
   "score": 0.4,
@@ -31,7 +31,7 @@
               "type": "jumpFlow",
               "collection": "opentext",
               "flowId": "4d5dde8c-f707-48d8-9112-1b4cbcd3e2cc",
-              "flowName": "08-How_To_Use_Mounjaro",
+              "flowName": "08_How_To_Use_Mounjaro",
               "nodeId": "c24a6556-2d22-4f4b-b28e-161891aabdcb",
               "responsesStartIndex": "0"
             },
@@ -49,7 +49,7 @@
                 "text": "Support resources and/or assistance.",
                 "payload": {
                   "action": "triggerFlow",
-                  "value": "12-Subcat_Support_Resources"
+                  "value": "12_Subcat_Support_Resources"
                 }
               }
             },
@@ -62,7 +62,7 @@
                 "text": "Other topics.",
                 "payload": {
                   "action": "triggerFlow",
-                  "value": "11-Other_Topics"
+                  "value": "11_Other_Topics"
                 }
               }
             },
@@ -75,7 +75,7 @@
                 "text": "Done for today.",
                 "payload": {
                   "action": "triggerFlow",
-                  "value": "13-Offboarding"
+                  "value": "13_Offboarding"
                 }
               }
             }
@@ -104,7 +104,7 @@
             "type": "jumpFlow",
             "collection": "opentext",
             "flowId": "59cd5622-ae45-45bb-9204-e86500125db6",
-            "flowName": "18-Vial_Response",
+            "flowName": "18_Vial_Response",
             "nodeId": "7e87b472-88af-4f8b-b10a-e79be7aff253",
             "responsesStartIndex": "3"
           }

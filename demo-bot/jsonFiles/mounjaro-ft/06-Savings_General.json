@@ -1,6 +1,6 @@
 {
   "_id": "f806c271-5e80-4c7d-bc92-7c67f124ec13",
-  "flowName": "06-Savings_Coverage_Full_Tree",
+  "flowName": "06_Savings_Coverage_Full_Tree",
   "conversationType": "Medical",
   "intentName": "",
   "score": 0.4,
@@ -38,7 +38,7 @@
           "type": "jumpFlow",
           "collection": "opentext",
           "flowId": "6cef38f3-1e6d-4fc0-afd4-e945377b3bbf",
-          "flowName": "06-Savings_Coverage_Card_Eligibility",
+          "flowName": "06_Savings_Coverage_Card_Eligibility",
           "nodeId": "981d2436-0750-4a35-b017-95add85cd2df",
           "responsesStartIndex": "0"
         }
@@ -53,7 +53,7 @@
             "type": "jumpFlow",
             "collection": "opentext",
             "flowId": "84fb8419-345e-4237-8399-a442fdf9ddfd",
-            "flowName": "06-Savings_Coverage_Get_Activate_Card",
+            "flowName": "06_Savings_Coverage_Get_Activate_Card",
             "nodeId": "c3d0b569-cdf9-435c-ae75-a3b358722132",
             "responsesStartIndex": "0"
           }
